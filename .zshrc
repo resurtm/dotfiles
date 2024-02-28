@@ -129,6 +129,14 @@ vv() {
   do NVIM_APPNAME=nvim-$config nvim $@; break; done
 }
 
+# https://stackoverflow.com/a/76746393/571465
+unsetopt pathdirs
+
+# https://github.com/TheLocehiliosan/yadm/issues/355#issuecomment-1065956317
+__git_files () {
+    _wanted files expl 'local files' _files
+}
+
 # -- sdkman
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
