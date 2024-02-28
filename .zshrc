@@ -110,15 +110,27 @@ export NVM_DIR="$HOME/.nvm"
 # export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:/home/resurtm/.gvm/gos/go1.22.0/bin/go
 
-# -- gvm
-source /home/resurtm/.gvm/scripts/gvm
+# -- gvim
+[[ -s "/home/resurtm/.gvm/scripts/gvm" ]] && source "/home/resurtm/.gvm/scripts/gvm"
 
 # -- direnv
 eval "$(direnv hook zsh)"
+
+# -- neovim/nvim
+# https://michaeluloth.com/neovim-switch-configs/
+alias v='nvim'
+alias vz='NVIM_APPNAME=nvim-lazyvim nvim'
+alias vc='NVIM_APPNAME=nvim-nvchad nvim'
+alias vk='NVIM_APPNAME=nvim-kickstart nvim'
+alias va='NVIM_APPNAME=nvim-astrovim nvim'
+alias vl='NVIM_APPNAME=nvim-lunarvim nvim'
+vv() {
+  select config in lazyvim kickstart nvchad astrovim lunarvim
+  do NVIM_APPNAME=nvim-$config nvim $@; break; done
+}
 
 # -- sdkman
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-[[ -s "/home/resurtm/.gvm/scripts/gvm" ]] && source "/home/resurtm/.gvm/scripts/gvm"
