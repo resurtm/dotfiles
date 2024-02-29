@@ -134,12 +134,12 @@ vv() {
 }
 
 # https://gist.github.com/dz-s/586c0b576d1afc1bf3962732c57d761a
-removecontainers() {
+docker_rm_conts() {
   docker stop $(docker ps -aq)
   docker rm $(docker ps -aq)
 }
-armageddon() {
-  removecontainers
+docker_arma() {
+  docker_rm_conts
   docker network prune -f
   docker rmi -f $(docker images --filter dangling=true -qa)
   docker volume rm $(docker volume ls --filter dangling=true -q)
