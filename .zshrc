@@ -24,7 +24,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 COMPLETION_WAITING_DOTS="true"
 
 # enabled plugins
-plugins=(git)
+plugins=(git direnv)
 
 # launch omz
 source $ZSH/oh-my-zsh.sh
@@ -43,9 +43,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # -- gvm
 [[ -s "/home/resurtm/.gvm/scripts/gvm" ]] && source "/home/resurtm/.gvm/scripts/gvm"
-
-# -- direnv
-eval "$(direnv hook zsh)"
 
 # -- neovim/nvim
 # https://michaeluloth.com/neovim-switch-configs/
