@@ -1,0 +1,5 @@
+[user]
+	name = resurtm
+	email = resurtm@gmail.com
+[core]
+	editor = NVIM_APPNAME=nvim-lazyvim nvim
