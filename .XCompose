@@ -1,0 +1,48 @@
+include "%L"
+
+## ------------------------
+## German language -- begin
+<Multi_key> <s> <s> : "ß"
+<Multi_key> <S> <S> : "ẞ"
+
+<Multi_key> <a> <a> : "ä"
+<Multi_key> <A> <A> : "Ä"
+
+<Multi_key> <o> <o> : "ö"
+<Multi_key> <O> <O> : "Ö"
+
+<Multi_key> <u> <u> : "ü"
+<Multi_key> <U> <U> : "Ü"
+## German language -- end
+## ----------------------
+
+## ------------------------
+## Kazakh language -- begin
+# <Multi_key> <Cyrillic_a> <Cyrillic_a> : "ә"
+# <Multi_key> <Cyrillic_A> <Cyrillic_A> : "Ә"
+
+# <Multi_key> <Cyrillic_ghe> <Cyrillic_ghe> : "ғ"
+# <Multi_key> <Cyrillic_GHE> <Cyrillic_GHE> : "Ғ"
+
+# <Multi_key> <Cyrillic_ka> <Cyrillic_ka> : "қ"
+# <Multi_key> <Cyrillic_KA> <Cyrillic_KA> : "Қ"
+
+# <Multi_key> <Cyrillic_en> <Cyrillic_en> : "ң"
+# <Multi_key> <Cyrillic_EN> <Cyrillic_EN> : "Ң"
+
+# <Multi_key> <Cyrillic_o> <Cyrillic_o> : "ө"
+# <Multi_key> <Cyrillic_O> <Cyrillic_O> : "Ө"
+
+# <Multi_key> <Cyrillic_u> <Cyrillic_u> : "ұ"
+# <Multi_key> <Cyrillic_U> <Cyrillic_U> : "Ұ"
+
+# <Multi_key> <Cyrillic_ya> <Cyrillic_ya> : "ү"
+# <Multi_key> <Cyrillic_YA> <Cyrillic_YA> : "Ү"
+
+# <Multi_key> <Cyrillic_i> <Cyrillic_i> : "i"
+# <Multi_key> <Cyrillic_I> <Cyrillic_I> : "I"
+
+# <Multi_key> <Cyrillic_che> <Cyrillic_che> : "һ"
+# <Multi_key> <Cyrillic_CHE> <Cyrillic_CHE> : "Һ"
+## Kazakh language -- end
+## ----------------------
