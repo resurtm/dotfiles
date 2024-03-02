@@ -37,7 +37,7 @@ export NVM_DIR="$HOME/.nvm"
 # -- rust/cargo
 # . "$HOME/.cargo/env"
 
-# -- golang
+# -- golang specific version
 # export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:/home/resurtm/.gvm/gos/go1.22.0/bin/go
 

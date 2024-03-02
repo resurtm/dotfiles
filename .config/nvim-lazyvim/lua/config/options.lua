@@ -7,3 +7,7 @@ local vim = vim
 local opt = vim.opt
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+
+-- prevent conceal of some Markdown related stuff, it's rather annoying than helpful
+-- https://github.com/preservim/vim-markdown/issues/253#issuecomment-181247898
+opt.conceallevel = 0
