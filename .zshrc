@@ -35,7 +35,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # -- rust/cargo
-# . "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
 
 # -- golang specific version
 # export PATH=$PATH:/usr/local/go/bin
