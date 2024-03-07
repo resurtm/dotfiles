@@ -41,10 +41,10 @@
 CapsLock::
 LangID := GetKeyboardLanguage(WinActive("A"))
 ; MsgBox % LangID
-if (LangID = 0x0409) {
-    Send, {Shift Down}{Control Down}2{Control Up}{Shift Up}
-} else {
+if (LangID = 0x043F or LangID = 0x0419 or LangID = 0x0407) {
     Send, {Shift Down}{Control Down}1{Control Up}{Shift Up}
+} else {
+    Send, {Shift Down}{Control Down}2{Control Up}{Shift Up}
 }
 return
 GetKeyboardLanguage(_hWnd=0) {
