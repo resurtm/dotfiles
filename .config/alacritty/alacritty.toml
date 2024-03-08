@@ -7,6 +7,10 @@ position = { x = 400, y = 250 }
 
 [env]
 # -- vim/neovim + tmux fix, second, begin --
-# link: https://www.reddit.com/r/neovim/comments/13thfol/comment/jlwllqm/
+# https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6
+# https://stackoverflow.com/a/41786092/571465
+# https://stackoverflow.com/a/55616731/571465
+# https://stackoverflow.com/a/58842892/571465
 TERM = "xterm-256color"
+# TERM = "screen-256color"
 # -- vim/neovim + tmux fix, second, end --

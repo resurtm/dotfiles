@@ -58,12 +58,12 @@ vv() {
 }
 
 # -- tmux + home/end keys
+# https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6
+# https://stackoverflow.com/a/41786092/571465
+# https://stackoverflow.com/a/55616731/571465
 # https://stackoverflow.com/a/58842892/571465
-# bindkey "\E[1~" beginning-of-line
-# bindkey "\E[4~" end-of-line
-# bindkey "\E[H" beginning-of-line
-# bindkey "\E[F" end-of-line
-# bindkey "\E[3~" delete-char
+bindkey "^[OF" end-of-line
+bindkey "^[OH" beginning-of-line
 
 # -- docker armageddon scripts
 # https://gist.github.com/dz-s/586c0b576d1afc1bf3962732c57d761a
