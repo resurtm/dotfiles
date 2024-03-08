@@ -5,3 +5,8 @@ normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 dimensions = { columns = 160, lines = 40 }
 position = { x = 400, y = 250 }
 
+[env]
+# -- vim/neovim + tmux fix, second, begin --
+# link: https://www.reddit.com/r/neovim/comments/13thfol/comment/jlwllqm/
+TERM = "xterm-256color"
+# -- vim/neovim + tmux fix, second, end --
