@@ -57,6 +57,14 @@ vv() {
   do NVIM_APPNAME=nvim-$config nvim $@; break; done
 }
 
+# -- tmux + home/end keys
+# https://stackoverflow.com/a/58842892/571465
+# bindkey "\E[1~" beginning-of-line
+# bindkey "\E[4~" end-of-line
+# bindkey "\E[H" beginning-of-line
+# bindkey "\E[F" end-of-line
+# bindkey "\E[3~" delete-char
+
 # -- docker armageddon scripts
 # https://gist.github.com/dz-s/586c0b576d1afc1bf3962732c57d761a
 docker_rm_conts() {
