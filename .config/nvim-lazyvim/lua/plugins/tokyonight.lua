@@ -6,5 +6,6 @@ return {
     -- style = "night",
     style = "moon",
     -- style = "storm",
+    -- style = "day",
   },
 }
