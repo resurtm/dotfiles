@@ -4,8 +4,8 @@ return {
   priority = 1000,
   opts = {
     -- style = "night",
-    style = "moon",
-    -- style = "storm",
+    -- style = "moon",
+    style = "storm",
     -- style = "day",
   },
 }
