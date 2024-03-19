@@ -91,6 +91,9 @@ __git_files () {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# -- haskell
+[ -f "/home/resurtm/.ghcup/env" ] && . "/home/resurtm/.ghcup/env" # ghcup-env
+
 # -- sdkman
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
 export SDKMAN_DIR="$HOME/.sdkman"
