@@ -87,14 +87,14 @@ __git_files () {
     _wanted files expl 'local files' _files
 }
 
-# -- powerlevel10k theme
+# -- powerlevel10k zsh theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # -- haskell
 [ -f "/home/resurtm/.ghcup/env" ] && . "/home/resurtm/.ghcup/env" # ghcup-env
 
-# -- sdkman
+# -- sdkman (java + jvm related)
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
