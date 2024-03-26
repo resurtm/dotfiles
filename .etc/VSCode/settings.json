@@ -1,0 +1,40 @@
+{
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', serif, 'Iosevka Nerd Font'",
+    "editor.links": false,
+    "editor.minimap.showSlider": "always",
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        120
+    ],
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "never",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "update.showReleaseNotes": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Cobalt Next Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 20,
+    "editor.lineNumbers": "relative",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "haskell.manageHLS": "GHCup",
+    "workbench.editorAssociations": {
+        "*.db3": "sqlite-viewer.option"
+    },
+    "workbench.colorCustomizations": {
+        "[Cobalt Next Dark]": {
+            "editorInlayHint.foreground": "#8888",
+            "editorInlayHint.background": "#0000",
+        }
+    }
+}
