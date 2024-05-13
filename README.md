@@ -208,3 +208,19 @@ Useful rules to install (or at least consider):
 
 1. `"Home and End"`
 2. `"Shift Home and End"`
+
+### Docker
+
+```
+brew install --cask docker
+# Important: open the Docker application in the Mac OS UI (i.e. Docker Desktop)
+
+docker version
+docker run hello-world
+
+docker compose version
+
+# maybe needed? the new Docker version already has the Docker Compose built-in
+# brew install docker-compose
+# docker compose version
+```
