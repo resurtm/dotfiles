@@ -224,3 +224,14 @@ docker compose version
 # brew install docker-compose
 # docker compose version
 ```
+
+### Python
+
+```
+brew install python
+python3 --version
+pip3 --version
+
+python3 -m venv venv
+source ./venv/bin/activate
+```
