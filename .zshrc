@@ -43,6 +43,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # -- gvm
 [[ -s "/home/resurtm/.gvm/scripts/gvm" ]] && source "/home/resurtm/.gvm/scripts/gvm"
+[[ -s "/Users/kckj076/.gvm/scripts/gvm" ]] && source "/Users/kckj076/.gvm/scripts/gvm"
 
 # -- neovim/nvim
 # https://michaeluloth.com/neovim-switch-configs/

@@ -243,3 +243,38 @@ pip3 --version
 python3 -m venv venv
 source ./venv/bin/activate
 ```
+
+### Rust
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+```
+
+### Golang
+
+**Step 1:** [Mac OS X Requirements](https://github.com/moovweb/gvm?tab=readme-ov-file#mac-os-x-requirements):
+
+```
+xcode-select --install
+brew update
+brew install mercurial
+```
+
+**Step 2:** [Installing](https://github.com/moovweb/gvm?tab=readme-ov-file#installing)
+
+```
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+```
+
+**Step 3:** ["An important note on installation"](https://github.com/moovweb/gvm/issues/385#issuecomment-1030190550):
+
+```
+brew install go && gvm install go1.22.3 && gvm use go1.22.3 --default && brew uninstall go
+```
+
+**Step 4:** Check that everything is good:
+
+```
+go version
+```
