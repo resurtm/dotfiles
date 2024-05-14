@@ -1,3 +1,6 @@
+## Alacritty local config
+local.toml
+
 ## already tracked
 .zshrc
 .zshenv

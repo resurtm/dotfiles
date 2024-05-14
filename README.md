@@ -75,11 +75,10 @@ touch ~/.config/alacritty/local.toml
 Important note on launching it:
 [click here](https://github.com/alacritty/alacritty/issues/4673#issuecomment-771291615).
 
-Mac OS usually needs bigger fonts for Alacritty. Content of the `~/.config/alacritty/local.toml` file should be:
+Mac OS specific Alacritty settings can be activated as follows:
 
 ```
-[font]
-size = 14.5
+cp ~/.config/alacritty/local.base.toml ~/.config/alacritty/local.toml
 ```
 
 ### yadm (Git related)

@@ -1,0 +1,10 @@
+[font]
+size = 14.5
+
+[keyboard]
+bindings = [
+    # Alacritty + MacOS + Karabiner Elements - Home/End support
+    # https://github.com/alacritty/alacritty/issues/474#issuecomment-338803299
+    { key = "Left", mods = "Command", chars = "\u001BOH", mode = "AppCursor" }, # Home
+    { key = "Right", mods = "Command", chars = "\u001BOF", mode = "AppCursor" }, # End
+]
