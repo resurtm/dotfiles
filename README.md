@@ -69,11 +69,18 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 
 ```
 brew install --cask alacritty --no-quarantine
+touch ~/.config/alacritty/local.toml
 ```
 
 Important note on launching it:
+[click here](https://github.com/alacritty/alacritty/issues/4673#issuecomment-771291615).
 
-https://github.com/alacritty/alacritty/issues/4673#issuecomment-771291615
+Mac OS usually needs bigger fonts for Alacritty. Content of the `~/.config/alacritty/local.toml` file should be:
+
+```
+[font]
+size = 14.5
+```
 
 ### yadm (Git related)
 
@@ -170,7 +177,7 @@ brew install --cask anki
 brew install --cask postman
 ```
 
-* Important: https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746 
+* Important: https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746
 * https://alt-tab-macos.netlify.app/
 * https://rectangleapp.com/
 
