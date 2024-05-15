@@ -232,7 +232,7 @@ docker compose version
 # docker compose version
 ```
 
-### Python
+### Python (base; system-wide)
 
 ```
 brew install python
@@ -241,6 +241,22 @@ pip3 --version
 
 python3 -m venv venv
 source ./venv/bin/activate
+```
+
+### Python (Anaconda)
+
+Things to consider:
+
+* `brew` usage with `conda` together: https://stackoverflow.com/a/62179041/571465
+* `conda` installation (from `brew`): https://gist.github.com/ryanorsinger/7d89ad58901b5590ec3e1f23d7b9f887
+
+```
+brew install --cask anaconda
+
+conda env list
+conda create --name my_new_env
+conda activate my_new_env
+conda env list
 ```
 
 ### Rust
