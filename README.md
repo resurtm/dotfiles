@@ -307,3 +307,11 @@ Follow this guide on how to setup the AWS CLI SSO:
 
 If you use AWS EKS and `kubectl` just follow this manual/guide:
 [click here](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
+`krew`, `kubens`, `kubectx`:
+
+Install script for `krew`: https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+
+```
+
+```
