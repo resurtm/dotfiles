@@ -293,3 +293,17 @@ brew install go && gvm install go1.22.3 && gvm use go1.22.3 --default && brew un
 ```
 go version
 ```
+
+### AWS CLI
+
+```
+brew install awscli
+```
+
+Follow this guide on how to setup the AWS CLI SSO:
+[click here](https://docs.aws.amazon.com/cli/latest/userguide/sso-configure-profile-token.html#sso-configure-profile-token-auto-sso)
+
+### `kubectl`
+
+If you use AWS EKS and `kubectl` just follow this manual/guide:
+[click here](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
