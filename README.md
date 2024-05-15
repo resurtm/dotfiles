@@ -313,5 +313,14 @@ If you use AWS EKS and `kubectl` just follow this manual/guide:
 Install script for `krew`: https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
 ```
+# check that it's installed correctly
+k krew
 
+# install two most important krew plugins
+k krew install ctx
+k krew install ns
+
+# check two installed plugins
+k ctx
+k ns
 ```
