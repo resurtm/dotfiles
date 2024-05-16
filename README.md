@@ -1,5 +1,35 @@
 # `resurtm`'s dotfiles and everything related
 
+## Kubernetes tips'n'tricks
+
+### PgSQL + socat pod
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: [YOUR_NAME]-pgsql-socat
+  labels:
+    name: [YOUR_NAME]-pgsql-socatt
+spec:
+  containers:
+  - name: [YOUR_NAME]-pgsql-socat
+    image: alpine/socat
+    command: ["socat", "-dd", "tcp4-listen:5432,fork,reuseaddr", "tcp4:[YOUR_RDS_HOSTNAME]:5432"]
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "50m"
+    ports:
+      - containerPort: 5432
+
+# Source: https://stackoverflow.com/a/70763298/571465
+# 1. `k apply -f [YOUR_NAME]-pgsql-socat.yaml`
+# 2. `k get pods --all-namespaces | grep [YOUR_NAME]`
+# 3. `k port-forward [YOUR_NAME]-pgsql-socat 5432:5432`
+# 4. `k delete pod [YOUR_NAME]-pgsql-socat`
+```
+
 ## Arch Linux
 
 ### Feker Galaxy80 (and maybe some other) mechanical keyboard
