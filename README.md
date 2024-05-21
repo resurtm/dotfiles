@@ -218,6 +218,7 @@ brew install spotify
 brew install --cask ukelele
 brew install --cask anki
 brew install --cask postman
+brew install --cask gimp
 ```
 
 * Important: https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746
