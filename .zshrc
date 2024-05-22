@@ -117,6 +117,7 @@ unset __conda_setup
 # additional binary containing folder (for example for the local `kubectl` installation)
 export PATH=$HOME/bin:$PATH
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH=$HOME/.rd/bin:$PATH
 
 # -- sdkman (java + jvm related)
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!

@@ -4,7 +4,9 @@
 
 ### PgSQL + socat pod
 
-```
+Source: [click here](https://stackoverflow.com/a/70763298/571465)
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -15,19 +17,20 @@ spec:
   containers:
   - name: [YOUR_NAME]-pgsql-socat
     image: alpine/socat
-    command: ["socat", "-dd", "tcp4-listen:5432,fork,reuseaddr", "tcp4:[YOUR_RDS_HOSTNAME]:5432"]
+    command: ["socat", "-dd", "tcp4-listen:9901,fork,reuseaddr", "tcp4:[RDS_DB_HOSTNAME]:5432"]
     resources:
       limits:
         memory: "64Mi"
         cpu: "50m"
     ports:
-      - containerPort: 5432
+      - containerPort: 9901
+```
 
-# Source: https://stackoverflow.com/a/70763298/571465
-# 1. `k apply -f [YOUR_NAME]-pgsql-socat.yaml`
-# 2. `k get pods --all-namespaces | grep [YOUR_NAME]`
-# 3. `k port-forward [YOUR_NAME]-pgsql-socat 5432:5432`
-# 4. `k delete pod [YOUR_NAME]-pgsql-socat`
+```zsh
+k apply -f [YOUR_NAME]-pgsql-socat.yaml
+k get pods --all-namespaces | grep [YOUR_NAME]
+k port-forward [YOUR_NAME]-pgsql-socat 9901:9901
+k delete pod [YOUR_NAME]-pgsql-socat
 ```
 
 ## Arch Linux
@@ -368,4 +371,12 @@ k krew install ns
 # check two installed plugins
 k ctx
 k ns
+```
+
+# Tilt
+
+https://docs.tilt.dev/
+
+```
+curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
 ```
