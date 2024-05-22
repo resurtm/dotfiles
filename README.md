@@ -33,6 +33,12 @@ k port-forward [YOUR_NAME]-pgsql-socat 9901:9901
 k delete pod [YOUR_NAME]-pgsql-socat
 ```
 
+## Git & Github Tips & Tricks
+
+### Using multiple Github accounts with SSH keys (work + personal together)
+
+[Click here.](https://gist.github.com/oanhnn/80a89405ab9023894df7)
+
 ## Arch Linux
 
 ### Feker Galaxy80 (and maybe some other) mechanical keyboard
