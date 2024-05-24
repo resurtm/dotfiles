@@ -45,9 +45,9 @@ k delete pod [YOUR_NAME]-pgsql-socat
 
 Related useful links:
 
-* https://www.reddit.com/r/Epomaker/comments/1bte204/comment/l0trju0/
-* https://gist.github.com/Joao-Peterson/d9b327b17933a128ee6d94c4c418df0c?permalink_comment_id=4769646#gistcomment-4769646
-* https://gist.github.com/Joao-Peterson/dbd6ee1abe480afd6094d266af7ab051
+* <https://www.reddit.com/r/Epomaker/comments/1bte204/comment/l0trju0/>
+* <https://gist.github.com/Joao-Peterson/d9b327b17933a128ee6d94c4c418df0c?permalink_comment_id=4769646#gistcomment-4769646>
+* <https://gist.github.com/Joao-Peterson/dbd6ee1abe480afd6094d266af7ab051>
 
 ```
 # `fnmode=2` seems to be possible too (have to check it)
@@ -108,7 +108,7 @@ Usual / everyday / desktop software:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-https://brew.sh/
+<https://brew.sh/>
 
 ### Git/SSH key
 
@@ -116,7 +116,7 @@ https://brew.sh/
 ssh-keygen -t ed25519 -C "first.last@company.com"
 ```
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>
 
 ### Alacritty
 
@@ -145,8 +145,8 @@ yadm gitconfig "user.name" "resurtm"
 yadm gitconfig "user.email" "resurtm@gmail.com"
 ```
 
-* https://yadm.io/docs/install
-* https://yadm.io/docs/getting_started
+* <https://yadm.io/docs/install>
+* <https://yadm.io/docs/getting_started>
 
 ### Git (general)
 
@@ -173,7 +173,7 @@ brew install --cask jetbrains-toolbox
 
 Important note on launching it:
 
-https://toolbox-support.jetbrains.com/hc/en-us/community/posts/360008186440-Unable-to-login?page=1#community_comment_360002628240
+<https://toolbox-support.jetbrains.com/hc/en-us/community/posts/360008186440-Unable-to-login?page=1#community_comment_360002628240>
 
 ### Fonts
 
@@ -188,7 +188,7 @@ brew install --cask font-jetbrains-mono-nerd-font
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-https://ohmyz.sh/#install
+<https://ohmyz.sh/#install>
 
 ### powerlevel10k omz theme
 
@@ -196,7 +196,7 @@ https://ohmyz.sh/#install
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#oh-my-zsh
+<https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#oh-my-zsh>
 
 ### tmux
 
@@ -209,7 +209,7 @@ Do not forget to activate and install the plugins:
 
 `Ctrl + B` (the default prefix key) and then `Shift + I` (capitalized `I`).
 
-https://github.com/tmux-plugins/tpm?tab=readme-ov-file#key-bindings
+<https://github.com/tmux-plugins/tpm?tab=readme-ov-file#key-bindings>
 
 ### Miscellaneous
 
@@ -228,11 +228,12 @@ brew install --cask ukelele
 brew install --cask anki
 brew install --cask postman
 brew install --cask gimp
+brew install MonitorControl
 ```
 
-* Important: https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746
-* https://alt-tab-macos.netlify.app/
-* https://rectangleapp.com/
+* Important: <https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746>
+* <https://alt-tab-macos.netlify.app/>
+* <https://rectangleapp.com/>
 
 ### NodeJS, npm, and nvm
 
@@ -242,7 +243,7 @@ nvm install --lts
 nvm use --lts
 ```
 
-https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+<https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating>
 
 ### NeoVim/LazyVim
 
@@ -256,8 +257,8 @@ npm install -g neovim
 
 ### Mac OS UI specific
 
-* https://www.reddit.com/r/applehelp/comments/17dmbts/why_cant_i_repeat_keys_by_holding_down_macbook/
-* https://www.macworld.com/article/351347/how-to-activate-key-repetition-through-the-macos-terminal.html
+* <https://www.reddit.com/r/applehelp/comments/17dmbts/why_cant_i_repeat_keys_by_holding_down_macbook/>
+* <https://www.macworld.com/article/351347/how-to-activate-key-repetition-through-the-macos-terminal.html>
 
 ### Karabiner Elements
 
@@ -269,6 +270,7 @@ Useful rules to install (or at least consider):
 
 1. `"Home and End"`
 2. `"Shift Home and End"`
+3. `"Personal rules (@ccmvn)"` -> `"Option+A/O/U to Ä/Ö/Ü (For US keyboard if you want to use German umlauts)"`
 
 ### Docker
 
@@ -301,8 +303,8 @@ source ./venv/bin/activate
 
 Things to consider:
 
-* `brew` usage with `conda` together: https://stackoverflow.com/a/62179041/571465
-* `conda` installation (from `brew`): https://gist.github.com/ryanorsinger/7d89ad58901b5590ec3e1f23d7b9f887
+* `brew` usage with `conda` together: <https://stackoverflow.com/a/62179041/571465>
+* `conda` installation (from `brew`): <https://gist.github.com/ryanorsinger/7d89ad58901b5590ec3e1f23d7b9f887>
 
 ```
 brew install --cask anaconda
@@ -364,7 +366,7 @@ If you use AWS EKS and `kubectl` just follow this manual/guide:
 
 `krew`, `kubens`, `kubectx`:
 
-Install script for `krew`: https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+Install script for `krew`: <https://krew.sigs.k8s.io/docs/user-guide/setup/install/>
 
 ```
 # check that it's installed correctly
@@ -381,7 +383,7 @@ k ns
 
 # Tilt
 
-https://docs.tilt.dev/
+<https://docs.tilt.dev/>
 
 ```
 curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
