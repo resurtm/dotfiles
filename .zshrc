@@ -100,7 +100,7 @@ __git_files () {
 # export PATH="/opt/homebrew/anaconda3/bin:$PATH"
 
 # >>> conda initialize >>>
-if [ "$HOST" != 'resurtm-t14' ]; then
+if [ "$HOST" != 'resurtm-t14-DISABLED' ]; then
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then

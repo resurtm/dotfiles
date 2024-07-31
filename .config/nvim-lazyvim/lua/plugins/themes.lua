@@ -1,4 +1,14 @@
 return {
+  { "ellisonleao/gruvbox.nvim" },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
+  },
+}
+
+--[[return {
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -10,4 +20,5 @@ return {
       -- style = "day",
     },
   },
-}
+}]]
+--
