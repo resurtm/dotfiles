@@ -121,12 +121,14 @@ export PATH=$HOME/bin:$PATH
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH=$HOME/.rd/bin:$PATH
 
-# -- sdkman (java + jvm related)
-# !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
+# https://formulae.brew.sh/formula/gnu-sed
+PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/kckj076/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# -- sdkman (java + jvm related)
+# !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
