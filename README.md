@@ -45,9 +45,9 @@ k delete pod [YOUR_NAME]-pgsql-socat
 
 Related useful links:
 
-* <https://www.reddit.com/r/Epomaker/comments/1bte204/comment/l0trju0/>
-* <https://gist.github.com/Joao-Peterson/d9b327b17933a128ee6d94c4c418df0c?permalink_comment_id=4769646#gistcomment-4769646>
-* <https://gist.github.com/Joao-Peterson/dbd6ee1abe480afd6094d266af7ab051>
+- <https://www.reddit.com/r/Epomaker/comments/1bte204/comment/l0trju0/>
+- <https://gist.github.com/Joao-Peterson/d9b327b17933a128ee6d94c4c418df0c?permalink_comment_id=4769646#gistcomment-4769646>
+- <https://gist.github.com/Joao-Peterson/dbd6ee1abe480afd6094d266af7ab051>
 
 ```
 # `fnmode=2` seems to be possible too (have to check it)
@@ -77,28 +77,28 @@ sudo add-apt-repository ppa:zhangsongcui3371/fastfetch \
 
 Several notes:
 
-* The original [`Neovim` installation manual is available here](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu).
-* [The `fastfetch` documentation is here](https://github.com/fastfetch-cli/fastfetch?tab=readme-ov-file#linux).
+- The original [`Neovim` installation manual is available here](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu).
+- [The `fastfetch` documentation is here](https://github.com/fastfetch-cli/fastfetch?tab=readme-ov-file#linux).
 
 ## MS Windows 11 _(including WSL2)_
 
 Coding / engineering software / tools:
 
-* [Alacritty](https://github.com/alacritty/alacritty/releases)
-* [WezTerm](https://wezfurlong.org/wezterm/install/windows.html)
+- [Alacritty](https://github.com/alacritty/alacritty/releases)
+- [WezTerm](https://wezfurlong.org/wezterm/install/windows.html)
 
 Necessary system-wide fonts:
 
 [The download page is here](https://www.nerdfonts.com/font-downloads).
 
-* `Iosevka Nerd Font`
-* `JetBrainsMono Nerd Font`
+- `Iosevka Nerd Font`
+- `JetBrainsMono Nerd Font`
 
 Usual / everyday / desktop software:
 
-* [Telegram](https://desktop.telegram.org/)
-* [WhatsApp Desktop](https://www.whatsapp.com/download?lang=de_DE)
-* [Skype](https://www.skype.com/de/get-skype/)
+- [Telegram](https://desktop.telegram.org/)
+- [WhatsApp Desktop](https://www.whatsapp.com/download?lang=de_DE)
+- [Skype](https://www.skype.com/de/get-skype/)
 
 ## Mac OS
 
@@ -145,8 +145,8 @@ yadm gitconfig "user.name" "resurtm"
 yadm gitconfig "user.email" "resurtm@gmail.com"
 ```
 
-* <https://yadm.io/docs/install>
-* <https://yadm.io/docs/getting_started>
+- <https://yadm.io/docs/install>
+- <https://yadm.io/docs/getting_started>
 
 ### Git (general)
 
@@ -228,12 +228,15 @@ brew install --cask ukelele
 brew install --cask anki
 brew install --cask postman
 brew install --cask gimp
+brew install --cask krita
 brew install MonitorControl
+
+brew install gnu-sed upx wget
 ```
 
-* Important: <https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746>
-* <https://alt-tab-macos.netlify.app/>
-* <https://rectangleapp.com/>
+- Important: <https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746>
+- <https://alt-tab-macos.netlify.app/>
+- <https://rectangleapp.com/>
 
 ### NodeJS, npm, and nvm
 
@@ -257,8 +260,8 @@ npm install -g neovim
 
 ### Mac OS UI specific
 
-* <https://www.reddit.com/r/applehelp/comments/17dmbts/why_cant_i_repeat_keys_by_holding_down_macbook/>
-* <https://www.macworld.com/article/351347/how-to-activate-key-repetition-through-the-macos-terminal.html>
+- <https://www.reddit.com/r/applehelp/comments/17dmbts/why_cant_i_repeat_keys_by_holding_down_macbook/>
+- <https://www.macworld.com/article/351347/how-to-activate-key-repetition-through-the-macos-terminal.html>
 
 ### Karabiner Elements
 
@@ -303,8 +306,8 @@ source ./venv/bin/activate
 
 Things to consider:
 
-* `brew` usage with `conda` together: <https://stackoverflow.com/a/62179041/571465>
-* `conda` installation (from `brew`): <https://gist.github.com/ryanorsinger/7d89ad58901b5590ec3e1f23d7b9f887>
+- `brew` usage with `conda` together: <https://stackoverflow.com/a/62179041/571465>
+- `conda` installation (from `brew`): <https://gist.github.com/ryanorsinger/7d89ad58901b5590ec3e1f23d7b9f887>
 
 ```
 brew install --cask anaconda
