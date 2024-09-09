@@ -162,6 +162,9 @@ git config "user.email" "resurtm@gmail.com"
 # yadm specific
 yadm gitconfig "user.name" "resurtm"
 yadm gitconfig "user.email" "resurtm@gmail.com"
+
+# LFS
+brew install git-lfs
 ```
 
 ### VS Code & Jetbrains Toolbox
