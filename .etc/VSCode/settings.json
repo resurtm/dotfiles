@@ -20,7 +20,7 @@
     "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Cobalt Next Dark",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 20,
