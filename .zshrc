@@ -24,7 +24,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 COMPLETION_WAITING_DOTS="true"
 
 # enabled plugins
-plugins=(git direnv rust kubectl)
+plugins=(git direnv rust kubectl terraform)
 
 # launch omz
 source $ZSH/oh-my-zsh.sh
