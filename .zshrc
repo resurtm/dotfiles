@@ -128,6 +128,11 @@ PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/Users/kckj076/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+# ZVM / Zig
+export ZVM_INSTALL="$HOME/.zvm/self"
+export PATH="$PATH:$HOME/.zvm/bin"
+export PATH="$PATH:$ZVM_INSTALL/"
+
 # -- sdkman (java + jvm related)
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -39,7 +39,19 @@ k delete pod [YOUR_NAME]-pgsql-socat
 
 [Click here.](https://gist.github.com/oanhnn/80a89405ab9023894df7)
 
-## Arch Linux
+## All Operating Systems
+
+### Zig
+
+https://github.com/tristanisham/zvm
+
+```
+curl https://raw.githubusercontent.com/tristanisham/zvm/master/install.sh | bash
+zvm i 0.13.0
+zvm i --zls 0.13.0
+```
+
+## Arch Linux + EndeavourOS
 
 ### Feker Galaxy80 (and maybe some other) mechanical keyboard
 
