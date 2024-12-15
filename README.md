@@ -43,7 +43,7 @@ k delete pod [YOUR_NAME]-pgsql-socat
 
 ### Zig
 
-https://github.com/tristanisham/zvm
+<https://github.com/tristanisham/zvm>
 
 ```
 curl https://raw.githubusercontent.com/tristanisham/zvm/master/install.sh | bash
@@ -338,6 +338,7 @@ conda env list
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
+rustup component add rust-analyzer
 ```
 
 ### Golang
