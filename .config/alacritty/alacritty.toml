@@ -3,13 +3,13 @@ import = ["~/.config/alacritty/local.toml"]
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-size = 10.5
+# size = 10.5
 
 [window]
 dimensions = { columns = 160, lines = 40 }
 position = { x = 400, y = 250 }
 
-title = ""
+title = "👽"
 dynamic_title = false
 decorations_theme_variant = "Dark"
 
