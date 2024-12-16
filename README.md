@@ -378,6 +378,12 @@ brew install go && gvm install go1.22.3 && gvm use go1.22.3 --default && brew un
 go version
 ```
 
+**Step 5:** Install Gopls:
+
+```
+go install -v golang.org/x/tools/gopls@latest
+```
+
 ### AWS CLI
 
 ```
