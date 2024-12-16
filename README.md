@@ -114,6 +114,15 @@ Usual / everyday / desktop software:
 
 ## Mac OS
 
+### Shortcuts and Hotkeys
+
+#### Mission Control
+
+Use these shortcuts to navigate between different spaces:
+
+* Previous space: `Ctrl` + `Command` + `Left Arrow`.
+* Next space: `Ctrl` + `Command` + `Right Arrow`.
+
 ### brew
 
 ```
