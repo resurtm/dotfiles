@@ -9,7 +9,8 @@ normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 dimensions = { columns = 160, lines = 40 }
 position = { x = 400, y = 250 }
 
-title = "👽"
+# title = "👽""
+title = ""
 dynamic_title = false
 decorations_theme_variant = "Dark"
 
