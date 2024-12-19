@@ -39,6 +39,9 @@ return {
         })
       )
       table.insert(opts.adapters, require("neotest-vitest"))
+
+      -- the line below might be not really necessary
+      -- table.insert(opts.adapters, require("rustaceanvim.neotest"))
     end,
   },
 }
