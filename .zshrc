@@ -34,6 +34,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# -- add deno completions to search path
+if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="/home/resurtm/.zsh/completions:$FPATH"; fi
+
 # -- rust/cargo
 . "$HOME/.cargo/env"
 
@@ -132,6 +135,9 @@ export PATH="/Users/kckj076/.rd/bin:$PATH"
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
+
+# -- deno
+. "/home/resurtm/.deno/env"
 
 # -- sdkman (java + jvm related)
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
