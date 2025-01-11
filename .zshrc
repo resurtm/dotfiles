@@ -91,6 +91,10 @@ __git_files () {
     _wanted files expl 'local files' _files
 }
 
+# -- yadm and lazygit together usage
+# https://github.com/jesseduffield/lazygit/discussions/1201#discussioncomment-2437060
+alias ylazy='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml" --work-tree ~ --git-dir ~/.local/share/yadm/repo.git'
+
 # -- powerlevel10k zsh theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
