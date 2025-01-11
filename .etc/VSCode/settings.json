@@ -1,45 +1,67 @@
 {
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', serif, 'Iosevka Nerd Font'",
-    "editor.links": false,
-    "editor.minimap.showSlider": "always",
-    "editor.renderWhitespace": "none",
-    "editor.rulers": [
-        120
-    ],
-    "files.trimTrailingWhitespace": true,
-    "git.confirmSync": false,
-    "git.openRepositoryInParentFolders": "never",
-    "security.allowedUNCHosts": [
-        "wsl.localhost"
-    ],
-    "security.workspace.trust.untrustedFiles": "open",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "update.showReleaseNotes": false,
-    "vsicons.dontShowNewVersionMessage": true,
-    "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 20,
-    "editor.lineNumbers": "relative",
-    "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 120,
-    "haskell.manageHLS": "GHCup",
-    "workbench.editorAssociations": {
-        "*.db3": "sqlite-viewer.option"
-    },
-    "workbench.colorCustomizations": {
-        "[Cobalt Next Dark]": {
-            "editorInlayHint.foreground": "#8888",
-            "editorInlayHint.background": "#0000",
-        }
-    },
-    "go.toolsManagement.autoUpdate": true,
-    "gitlens.codeLens.enabled": false,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', serif, 'Iosevka Nerd Font'",
+  "editor.links": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80, 120],
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.indent": 20,
+  "editor.lineNumbers": "on",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "haskell.manageHLS": "GHCup",
+  "workbench.editorAssociations": {
+    "*.db3": "sqlite-viewer.option"
+  },
+  "workbench.colorCustomizations": {
+    "[Cobalt Next Dark]": {
+      "editorInlayHint.foreground": "#8888",
+      "editorInlayHint.background": "#0000"
     }
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "gitlens.codeLens.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "editor.fontSize": 13,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "rescript.settings.inlayHints.enable": true,
+  "workbench.iconTheme": "vscode-icons",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.compactFolders": false,
+  "editor.minimap.showSlider": "always"
 }
