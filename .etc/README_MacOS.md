@@ -36,7 +36,7 @@ Important note on launching it:
 Mac OS specific Alacritty settings can be activated as follows:
 
 ```
-cp ~/.config/alacritty/local.base.toml ~/.config/alacritty/local.toml
+cp ~/.config/alacritty/local.macos.toml ~/.config/alacritty/local.toml
 ```
 
 ### yadm (Git related)

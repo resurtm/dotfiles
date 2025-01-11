@@ -1,3 +1,13 @@
+# All Linux flavors
+
+## Alacritty
+
+Linux specific Alacritty settings can be activated as follows:
+
+```
+cp ~/.config/alacritty/local.linux.toml ~/.config/alacritty/local.toml
+```
+
 # Arch Linux + EndeavourOS
 
 ## Feker Galaxy80 mechanical keyboard (+ maybe some others)

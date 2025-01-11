@@ -2,9 +2,9 @@
 import = ["~/.config/alacritty/local.toml"]
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-# size = 10.5
+# size = 9.0
 
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 [window]
 dimensions = { columns = 160, lines = 40 }
 position = { x = 400, y = 250 }
