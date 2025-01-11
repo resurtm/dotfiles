@@ -4,8 +4,19 @@
 
 Linux specific Alacritty settings can be activated as follows:
 
-```
+```zsh
 cp ~/.config/alacritty/local.linux.toml ~/.config/alacritty/local.toml
+```
+
+## GNOME
+
+### Cursor Size
+
+More details are available here: [click here](https://linux-tips.com/t/setting-cursor-size-in-gnome/835).
+The size of `20` seems to be sensible value for a 4K 32" display.
+
+```zsh
+gsettings set org.gnome.desktop.interface cursor-size 20
 ```
 
 # Arch Linux + EndeavourOS
