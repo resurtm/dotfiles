@@ -100,7 +100,7 @@ alias ylazy='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml" --work-t
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # -- haskell
-[ -f "/home/resurtm/.ghcup/env" ] && . "/home/resurtm/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
 
 # commented out by conda initialize
 # export PATH="/usr/local/anaconda3/bin:$PATH"
