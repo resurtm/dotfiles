@@ -144,7 +144,14 @@ export PATH="$PATH:$ZVM_INSTALL/"
 export PATH="$PATH:$HOME/odin"
 
 # -- deno
-. "/home/resurtm/.deno/env"
+. "$HOME/.deno/env"
+
+# -- deno - add deno completions to search path (added by deno install script)
+if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then export FPATH="$HOME/.zsh/completions:$FPATH"; fi
+
+# -- deno - initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
 
 # -- sdkman (java + jvm related)
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
