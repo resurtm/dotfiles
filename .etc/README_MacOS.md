@@ -146,12 +146,22 @@ brew install gnu-sed upx wget
 - <https://alt-tab-macos.netlify.app/>
 - <https://rectangleapp.com/>
 
-### NodeJS, npm, and nvm
+### JavaScript
+
+#### NodeJS, npm, and nvm
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install --lts
 nvm use --lts
+```
+
+#### Deno
+
+The Deno homepage: https://deno.com
+
+```
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
 <https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating>
