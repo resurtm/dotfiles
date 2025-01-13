@@ -236,6 +236,11 @@ conda activate my_new_env
 conda env list
 ```
 
+### Python (+ NeoVim)
+
+1. See this article for the `pynvim` Python package: https://peterbabic.dev/blog/install-pynvim-via-homebrew/
+2. See this comment for the `venv-selector` NeoVim plugin: https://github.com/linux-cultist/venv-selector.nvim/issues/117#issuecomment-2266800120
+
 ### Rust
 
 ```

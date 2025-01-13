@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.o.conceallevel = 0
+
+vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
