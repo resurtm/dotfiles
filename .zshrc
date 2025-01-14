@@ -44,9 +44,8 @@ if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="
 # export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:/home/resurtm/.gvm/gos/go1.22.0/bin/go
 
-# -- gvm
-[[ -s "/home/resurtm/.gvm/scripts/gvm" ]] && source "/home/resurtm/.gvm/scripts/gvm"
-[[ -s "/Users/kckj076/.gvm/scripts/gvm" ]] && source "/Users/kckj076/.gvm/scripts/gvm"
+# -- gvm (Golang Version Manager)
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # -- neovim/nvim
 # https://michaeluloth.com/neovim-switch-configs/
@@ -132,7 +131,7 @@ export PATH=$HOME/.rd/bin:$PATH
 PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/kckj076/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 # ZVM / Zig
