@@ -1,8 +1,12 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
-    normal {
+    normal clear-defaults=true {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        // tmux
+        // bind "Ctrl f" { SwitchToMode "Tmux"; }
+        // unbind "Ctrl b"
+        bind "Ctrl b" { SwitchToMode "Tmux"; }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -409,5 +413,23 @@ load_plugins {
 // support_kitty_keyboard_protocol false
 
 // -- this uses absolute path, adjust it for the other operating systems
-theme_dir "/home/resurtm/.config/zellij/themes/"
-theme "cyberdream"
+// theme_dir "/home/resurtm/.config/zellij/themes/"
+// theme "cyberdream"
+theme "catppuccin-macchiato"
+
+// -- https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/zellij
+themes {
+    cyberdream {
+        bg "#16181a"
+        fg "#ffffff"
+        black "#7b8496"
+        red "#ff6e5e"
+        green "#5eff6c"
+        yellow "#f1ff5e"
+        blue "#5ea1ff"
+        magenta "#ff5ef1"
+        cyan "#5ef1ff"
+        white "#ffffff"
+        orange "#ffbd5e"
+    }
+}

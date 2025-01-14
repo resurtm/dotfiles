@@ -25,6 +25,7 @@ Several notes:
 
 - Zellij: https://github.com/zellij-org/zellij
 - Theme: https://github.com/scottmckendry/cyberdream.nvim/tree/main/extras/zellij
+- Zellij + Neovim (tmux mode): https://shoukoo.github.io/blog/zellij-love-neovim/
 
 ```
 # local bin (which is in PATH)
