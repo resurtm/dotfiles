@@ -321,3 +321,13 @@ k ns
 ```
 curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
 ```
+
+# Databases
+
+## MongoDB
+
+`mongosh` brew package: https://formulae.brew.sh/formula/mongosh
+
+```
+brew install mongosh
+```
