@@ -14,6 +14,8 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 setopt EXTENDED_HISTORY
 
+HOSTNAME=$HOST
+
 # -- omz installation path
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -129,6 +131,9 @@ else
 fi
 unset __conda_setup
 }
+if [[ "$HOSTNAME" == d* ]]; then
+  conda_init
+fi
 # <<< conda initialize <<<
 
 # additional binary containing folder (for example for the local `kubectl` installation)
