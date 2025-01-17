@@ -1,5 +1,5 @@
 # -- zsh startup profile -- begin
-set -x
+# set -x
 
 # -- powerlevel10k
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -24,15 +24,16 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # -- omz update logic
-# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode disabled    # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # show three dots while autocompletion is thinking
 COMPLETION_WAITING_DOTS="true"
 
 # enabled plugins
-plugins=(git direnv rust kubectl terraform)
+# plugins=(git direnv rust kubectl terraform)
+plugins=()
 
 # launch omz
 source $ZSH/oh-my-zsh.sh
@@ -114,7 +115,7 @@ alias ylazy='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml" --work-t
 # export PATH="/opt/homebrew/anaconda3/bin:$PATH"
 
 # >>> conda initialize >>>
-if [ "$HOST" != 'resurtm-t14-DISABLED' ]; then
+conda_init() {
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -127,7 +128,7 @@ else
     fi
 fi
 unset __conda_setup
-fi
+}
 # <<< conda initialize <<<
 
 # additional binary containing folder (for example for the local `kubectl` installation)
@@ -166,4 +167,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # -- zsh startup profile -- end
-set +x
+# set +x
