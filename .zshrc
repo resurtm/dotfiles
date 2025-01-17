@@ -1,5 +1,5 @@
 # -- zsh startup profile -- begin
-# set -x
+set -x
 
 # -- powerlevel10k
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -34,8 +34,7 @@ zstyle ':omz:update' mode disabled    # disable automatic updates
 COMPLETION_WAITING_DOTS="true"
 
 # enabled plugins
-# plugins=(git direnv rust kubectl terraform)
-plugins=()
+plugins=(git kubectl)
 
 # launch omz
 source $ZSH/oh-my-zsh.sh
@@ -172,4 +171,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # -- zsh startup profile -- end
-# set +x
+set +x
