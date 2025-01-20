@@ -1,5 +1,5 @@
 # -- zsh startup profile -- begin
-set -x
+# set -x
 
 # -- powerlevel10k
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -45,14 +45,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # -- add deno completions to search path
+deno_init() {
 if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="/home/resurtm/.zsh/completions:$FPATH"; fi
+}
 
 # -- rust/cargo
 . "$HOME/.cargo/env"
-
-# -- golang specific version
-# export PATH=$PATH:/usr/local/go/bin
-# export PATH=$PATH:/home/resurtm/.gvm/gos/go1.22.0/bin/go
 
 # -- gvm (Golang Version Manager)
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
@@ -171,4 +169,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # -- zsh startup profile -- end
-set +x
+# set +x
