@@ -1,3 +1,17 @@
+# MS Windows (10 + 11)
+
+## General Things
+
+```
+# https://scoop.sh/
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+scoop install git
+scoop bucket add extras
+scoop install ytmdesktop
+```
+
 ## Ubuntu LTS _(including MS Windows 11 WSL2)_
 
 ```
