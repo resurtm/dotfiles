@@ -127,19 +127,16 @@ xattr -dr com.apple.quarantine /Applications/Easy\ Move+Resize.app
 brew install --cask alt-tab
 brew install --cask rectangle
 
-brew install fastfetch
-brew install htop
-brew install topgrade
-
-brew install spotify
 brew install --cask ukelele
 brew install --cask anki
 brew install --cask postman
 brew install --cask gimp
 brew install --cask krita
+brew install --cask ytmdesktop-youtube-music
 brew install MonitorControl
 
-brew install gnu-sed upx wget
+brew install topgrade htop fastfetch yazi
+brew install gnu-sed upx wget watch tree
 ```
 
 - Important: <https://github.com/dmarcotte/easy-move-resize/issues/84#issuecomment-1184946746>
