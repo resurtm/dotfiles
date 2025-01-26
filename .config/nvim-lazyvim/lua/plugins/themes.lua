@@ -1,19 +1,27 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
-  { "nyoom-engineering/oxocarbon.nvim" },
   {
     "scottmckendry/cyberdream.nvim",
-    lazy = false,
     priority = 1000,
+    opts = {
+      cache = true,
+    },
   },
-  { "miikanissi/modus-themes.nvim", priority = 1000 },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    opts = {
+      contrast = "hard",
+    },
+  },
+  -- { "tiagovla/tokyodark.nvim" },
+  -- { "nyoom-engineering/oxocarbon.nvim" },
+  -- { "miikanissi/modus-themes.nvim" },
+  -- { "zootedb0t/citruszest.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "gruvbox",
-      -- colorscheme = "oxocarbon",
-      colorscheme = "cyberdream",
-      -- colorscheme = "modus",
+      -- colorscheme = "cyberdream",
+      colorscheme = "gruvbox",
     },
   },
   {
