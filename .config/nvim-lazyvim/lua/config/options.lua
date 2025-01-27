@@ -5,3 +5,5 @@
 vim.o.conceallevel = 0
 
 vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
+vim.g.lazyvim_python_lsp = "pylsp"
+vim.g.lazyvim_python_ruff = "ruff"
