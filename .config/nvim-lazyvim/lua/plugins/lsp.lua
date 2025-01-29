@@ -37,7 +37,9 @@ return {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
-        python = { "mypy", "pylint", "ruff" },
+        python = { "mypy", "ruff" },
+        -- optional things which could be useful for Python
+        -- python = { "pylint" },
       },
     },
   },
@@ -45,7 +47,9 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        python = { "ruff_fix", "ruff_format", "black", "isort" },
+        python = { "ruff_fix", "ruff_format" },
+        -- optional things which could be useful for Python
+        -- python = { "black", "isort" },
       },
     },
   },
