@@ -163,6 +163,11 @@ if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then export FPATH="$HOME/.z
 autoload -Uz compinit
 compinit
 
+# -- MacOS specific PostgreSQL CLI client
+if [[ "$HOSTNAME" == d* ]]; then
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+fi
+
 # -- sdkman (java + jvm related)
 # !!! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK !!!
 export SDKMAN_DIR="$HOME/.sdkman"
