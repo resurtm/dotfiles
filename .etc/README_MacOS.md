@@ -135,6 +135,7 @@ brew install --cask krita
 brew install --cask ytmdesktop-youtube-music
 brew install MonitorControl
 
+brew install coreutils
 brew install topgrade htop fastfetch yazi
 brew install gnu-sed upx wget watch tree
 ```
