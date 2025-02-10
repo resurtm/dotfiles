@@ -39,6 +39,9 @@ Mac OS specific Alacritty settings can be activated as follows:
 cp ~/.config/alacritty/local.macos.toml ~/.config/alacritty/local.toml
 ```
 
+Alacritty on MacOS might render fonts a bit thicker and differently (compared to Linux and MS Windows).
+The fix is here: [click here](https://github.com/alacritty/alacritty/issues/7333).
+
 ### yadm (Git related)
 
 ```
