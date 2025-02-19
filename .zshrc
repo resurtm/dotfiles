@@ -138,9 +138,6 @@ export PATH=$HOME/bin:$PATH
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH=$HOME/.rd/bin:$PATH
 
-# https://formulae.brew.sh/formula/gnu-sed
-PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
-
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
@@ -163,9 +160,17 @@ if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then export FPATH="$HOME/.z
 autoload -Uz compinit
 compinit
 
-# -- MacOS specific PostgreSQL CLI client
+# -- brew/MacOS specific
 if [[ "$HOSTNAME" == d* ]]; then
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+  # https://formulae.brew.sh/formula/gnu-sed
+  export PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
+
+  # MacOS specific PostgreSQL CLI client
+  export PATH="$HOMEBREW_PREFIX/opt/libpq/bin:$PATH"
+
+  # some extra libraries for Golang on MacOS
+  export CGO_LDFLAGS="-L$HOMEBREW_PREFIX/lib -lm"
+  export CGO_CPPFLAGS="-I$HOMEBREW_PREFIX/include"
 fi
 
 # -- sdkman (java + jvm related)
