@@ -29,6 +29,20 @@ For example, work + personal Github accounts.
 
 [Click here](https://gist.github.com/oanhnn/80a89405ab9023894df7).
 
+### `fatal: Could not read from remote repository.`
+
+```
+$ git fetch --all
+
+ssh_dispatch_run_fatal: Connection to 140.82.121.3 port 22: Operation timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+[Click here](https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794).
+
 ## Kubernetes
 
 ### `kubectl port-forward` + socat pod
