@@ -138,10 +138,6 @@ export PATH=$HOME/bin:$PATH
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export PATH=$HOME/.rd/bin:$PATH
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="$HOME/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 # ZVM / Zig
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
@@ -180,3 +176,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # -- zsh startup profile -- end
 # set +x
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/kckj076/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

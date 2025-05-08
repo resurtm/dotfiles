@@ -79,3 +79,11 @@ k get pods --all-namespaces | grep [YOUR_NAME]
 k port-forward [YOUR_NAME]-pgsql-socat 9901:9901
 k delete pod [YOUR_NAME]-pgsql-socat
 ```
+
+## Docker
+
+Alternatives to Docker Desktop:
+
+- https://github.com/abiosoft/colima
+- https://docs.orbstack.dev/install
+- https://rancherdesktop.io/
