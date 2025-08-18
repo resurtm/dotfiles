@@ -1,7 +1,8 @@
 # $ cp ~/.config/alacritty/local.macos.toml ~/.config/alacritty/local.toml
 
 [font]
-size = 14.5
+size = 15.0
+# size = 16.0
 
 [keyboard]
 bindings = [
