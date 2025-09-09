@@ -33,16 +33,16 @@ return {
       },
     },
   },
-  {
-    "mfussenegger/nvim-lint",
-    opts = {
-      linters_by_ft = {
-        python = { "mypy", "ruff" },
-        -- optional things which could be useful for Python
-        -- python = { "pylint" },
-      },
-    },
-  },
+  -- {
+  --   "mfussenegger/nvim-lint",
+  --   opts = {
+  --     linters_by_ft = {
+  --       python = { "mypy", "ruff" },
+  --       -- optional things which could be useful for Python
+  --       -- python = { "pylint" },
+  --     },
+  --   },
+  -- },
   {
     "stevearc/conform.nvim",
     opts = {
