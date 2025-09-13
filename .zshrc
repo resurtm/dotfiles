@@ -1,14 +1,6 @@
 # -- zsh startup profile -- begin
 # set -x
 
-# -- powerlevel10k
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-
 # export HISTFILE="$HOME/.zsh_history"
 export HISTSIZE=100000
 export SAVEHIST=100000
@@ -58,7 +50,9 @@ if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="
 # -- neovim/nvim
 # https://michaeluloth.com/neovim-switch-configs/
 alias v='nvim'
-alias vz='NVIM_APPNAME=nvim-lazyvim nvim'
+vz() {
+  NVIM_APPNAME=nvim-lazyvim nvim $@
+}
 alias vc='NVIM_APPNAME=nvim-nvchad nvim'
 alias vk='NVIM_APPNAME=nvim-kickstart nvim'
 alias va='NVIM_APPNAME=nvim-astrovim nvim'
@@ -101,10 +95,6 @@ __git_files () {
 # -- yadm and lazygit together usage
 # https://github.com/jesseduffield/lazygit/discussions/1201#discussioncomment-2437060
 alias ylazy='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml" --work-tree ~ --git-dir ~/.local/share/yadm/repo.git'
-
-# -- powerlevel10k zsh theme
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # -- haskell
 [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
@@ -189,6 +179,6 @@ export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 
 # default text editor
-export EDITOR="NVIM_APPNAME=nvim-lazyvim nvim"
+export EDITOR="vz"
 
 eval "$(starship init zsh)"
