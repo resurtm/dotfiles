@@ -1,5 +1,9 @@
 # $ cp ~/.config/alacritty/local.macos.toml ~/.config/alacritty/local.toml
 
+[window]
+# https://github.com/alacritty/alacritty/issues/7637#issuecomment-1896162182
+option_as_alt = "Both"
+
 [font]
 size = 15.0
 # size = 16.0
