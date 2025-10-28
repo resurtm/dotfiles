@@ -179,6 +179,6 @@ export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 
 # default text editor
-export EDITOR="vz"
+export EDITOR="NVIM_APPNAME=nvim-lazyvim nvim"
 
 eval "$(starship init zsh)"
