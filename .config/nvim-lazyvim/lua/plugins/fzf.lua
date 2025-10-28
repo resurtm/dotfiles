@@ -1,3 +1,6 @@
+-- stylua: ignore
+if true then return {} end
+
 return {
   {
     "ibhagwan/fzf-lua",
@@ -13,6 +16,7 @@ return {
           },
         },
         grep = {
+          hidden = true,
           actions = {
             ["ctrl-i"] = { actions.toggle_ignore },
             ["ctrl-h"] = { actions.toggle_hidden },
