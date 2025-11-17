@@ -1,10 +1,8 @@
--- stylua: ignore
-if true then return {} end
-
 return {
   {
     "linux-cultist/venv-selector.nvim",
-    dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
+    -- dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
+    dependencies = { "neovim/nvim-lspconfig", "mfussenegger/nvim-dap-python" },
     opts = {},
     keys = {},
     config = function(_, _)

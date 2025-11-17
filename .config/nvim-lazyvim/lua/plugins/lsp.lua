@@ -23,6 +23,7 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
+        pyright = false,
         yamlls = {
           settings = {
             yaml = {
