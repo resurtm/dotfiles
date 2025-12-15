@@ -42,7 +42,7 @@ if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="
 }
 
 # -- rust/cargo
-. "$HOME/.cargo/env"
+[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 # -- gvm (Golang Version Manager)
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
@@ -137,7 +137,7 @@ export PATH="$PATH:$ZVM_INSTALL/"
 export PATH="$PATH:$HOME/odin"
 
 # -- deno
-. "$HOME/.deno/env"
+[[ -s "$HOME/.deno/env" ]] && source "$HOME/.deno/env"
 
 # -- deno - add deno completions to search path (added by deno install script)
 if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then export FPATH="$HOME/.zsh/completions:$FPATH"; fi
