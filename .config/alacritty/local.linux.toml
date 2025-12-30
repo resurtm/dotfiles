@@ -1,4 +1,4 @@
 # $ cp ~/.config/alacritty/local.linux.toml ~/.config/alacritty/local.toml
 
 [font]
-size = 10.0
+size = 11.0
