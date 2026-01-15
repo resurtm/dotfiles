@@ -183,4 +183,8 @@ export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 # default text editor
 export EDITOR="NVIM_APPNAME=nvim-lazyvim nvim"
 
+# doom emacs
+export PATH="$HOME/.config/emacs/bin/:$PATH"
+# alias emacs="emacsclient -c -a 'emacs'"
+
 eval "$(starship init zsh)"
