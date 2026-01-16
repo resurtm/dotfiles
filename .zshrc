@@ -47,7 +47,10 @@ if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 # -- gvm (Golang Version Manager)
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+# The GVM tool seems to be not supported, the last commit was ~3 years ago.
+# Just prefer the system-wide default Golang installation for now.
+# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+[[ -s "$HOME/go/bin" ]] && export PATH="$HOME/go/bin:$PATH"
 
 # -- neovim/nvim
 # https://michaeluloth.com/neovim-switch-configs/
