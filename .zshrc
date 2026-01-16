@@ -50,7 +50,10 @@ if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="
 # The GVM tool seems to be not supported, the last commit was ~3 years ago.
 # Just prefer the system-wide default Golang installation for now.
 # [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-[[ -s "$HOME/go/bin" ]] && export PATH="$HOME/go/bin:$PATH"
+# [[ -s "$HOME/go/bin" ]] && export PATH="$HOME/go/bin:$PATH"
+gobin=$(go env GOPATH); [[ -d "$gobin" ]] && export PATH="$gobin/bin:$PATH"
+export GOPROXY=https://proxy.golang.org,direct
+export GOSUMDB=sum.golang.org
 
 # -- neovim/nvim
 # https://michaeluloth.com/neovim-switch-configs/
