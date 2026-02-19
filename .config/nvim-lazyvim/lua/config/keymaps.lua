@@ -15,10 +15,10 @@ vim.keymap.set("i", "<Right>", "<Nop>", { noremap = true })
 vim.keymap.set("i", "<Up>", "<Nop>", { noremap = true })
 
 -- Disable arrow keys in Command mode
-vim.keymap.set("c", "<Down>", "<Nop>", { noremap = true })
-vim.keymap.set("c", "<Left>", "<Nop>", { noremap = true })
-vim.keymap.set("c", "<Right>", "<Nop>", { noremap = true })
-vim.keymap.set("c", "<Up>", "<Nop>", { noremap = true })
+-- vim.keymap.set("c", "<Down>", "<Nop>", { noremap = true })
+-- vim.keymap.set("c", "<Left>", "<Nop>", { noremap = true })
+-- vim.keymap.set("c", "<Right>", "<Nop>", { noremap = true })
+-- vim.keymap.set("c", "<Up>", "<Nop>", { noremap = true })
 
 -- Disable arrow keys in Visual mode
 vim.keymap.set("v", "<Down>", "<Nop>", { noremap = true })
