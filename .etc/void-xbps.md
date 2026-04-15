@@ -1,19 +1,3 @@
-# `flatpak`
-
-```
-Dropbox	com.dropbox.Client	246.4.3513	stable	system
-Flatseal	com.github.tchx84.Flatseal	2.4.0	stable	system
-Steam	com.valvesoftware.Steam	1.0.0.85	stable	system
-Anki	net.ankiweb.Anki	25.09.02	stable	system
-Joplin	net.cozic.joplin_desktop	3.5.13	stable	system
-Mullvad Browser	net.mullvad.MullvadBrowser	15.0.9	stable	system
-Firefox	org.mozilla.firefox	149.0.2	stable	system
-Telegram	org.telegram.desktop	6.7.5	stable	system
-```
-
-# `xbps`
-
-```
 LACT-0.8.4_1
 alacritty-0.17.0_1
 alsa-pipewire-1.6.2_1
@@ -23,6 +7,7 @@ base-devel-20181003_2
 base-system-0.114_2
 bind-utils-9.20.18_1
 bluez-5.86_2
+btop-1.4.6_1
 chrony-4.8_1
 cryptsetup-2.8.4_1
 curl-8.19.0_1
@@ -81,4 +66,3 @@ yadm-3.5.0_1
 yazi-26.1.22_2
 zlib-devel-1.3.2_1
 zsh-5.9_5
-```
