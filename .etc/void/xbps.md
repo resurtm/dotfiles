@@ -26,7 +26,6 @@ filezilla
 flatpak
 fzf
 gimp
-git
 gmp-devel
 go
 grub-x86_64-efi
@@ -61,7 +60,6 @@ tmux
 unzip
 vlc
 void-repo-nonfree
-vulkan-loader
 wget
 wireguard-tools
 wl-clipboard
