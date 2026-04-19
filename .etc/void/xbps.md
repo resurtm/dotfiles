@@ -15,6 +15,8 @@ bluez
 btop
 chrony
 cryptsetup
+cups
+cups-filters
 curl
 dolphin
 elogind
@@ -50,11 +52,14 @@ nerd-fonts
 okular
 polkit
 power-profiles-daemon
+print-manager
 psmisc
 ripgrep
+rpm
 socklog-void
 spectacle
 starship
+system-config-printer
 terminus-font
 tmux
 unzip
