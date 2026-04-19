@@ -12,6 +12,7 @@ base-devel
 base-system
 bind-utils
 bluez
+brother-brscan5
 btop
 chrony
 cryptsetup
@@ -56,6 +57,7 @@ print-manager
 psmisc
 ripgrep
 rpm
+skanpage
 socklog-void
 spectacle
 starship
