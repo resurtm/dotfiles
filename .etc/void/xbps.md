@@ -21,6 +21,7 @@ cups-filters
 curl
 dolphin
 elogind
+exiftool
 fastfetch
 fcron
 fd
