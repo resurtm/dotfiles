@@ -4,6 +4,8 @@
 
 ```
 Anki	net.ankiweb.Anki
+Brave	com.brave.Browser
+Dropbox	com.dropbox.Client
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Joplin	net.cozic.joplin_desktop

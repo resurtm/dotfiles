@@ -9,7 +9,7 @@ rm -f -- "$ffile" "$xfile" "$efile"
 mkdir -p -- "$dir"
 
 echo "# Void Flatpak\n\n## List\n\n\`\`\`" >>"$ffile"
-flatpak list --app --columns=name,application | sed '1d' | sort >>"$ffile"
+flatpak list --app --columns=name,application | sort >>"$ffile"
 echo "\`\`\`" >>"$ffile"
 
 echo "# Void XBPS\n\n## List\n\n\`\`\`" >>"$xfile"
