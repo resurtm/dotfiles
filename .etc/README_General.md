@@ -87,3 +87,9 @@ Alternatives to Docker Desktop:
 - https://github.com/abiosoft/colima
 - https://docs.orbstack.dev/install
 - https://rancherdesktop.io/
+
+## Brave
+
+- https://switchoffai.com/Not-Consuming-AI/brave/
+- https://github.com/Anxarden/brave-debloater/
+- https://github.com/MulesGaming/brave-debloatinator
