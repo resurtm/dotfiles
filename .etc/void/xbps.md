@@ -41,8 +41,6 @@ keepassxc
 kwrite
 lazygit
 libspa-bluetooth
-linux6.19
-linux6.19-headers
 lvm2
 mesa-demos
 mesa-dri
