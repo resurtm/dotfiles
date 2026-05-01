@@ -49,6 +49,7 @@ if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="
 # -- gvm (Golang Version Manager)
 # The GVM tool seems to be not supported, the last commit was ~3 years ago.
 # Just prefer the system-wide default Golang installation for now.
+export PATH=$PATH:/usr/local/go/bin
 # [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 # [[ -s "$HOME/go/bin" ]] && export PATH="$HOME/go/bin:$PATH"
 gobin=$(go env GOPATH); [[ -d "$gobin" ]] && export PATH="$gobin/bin:$PATH"
