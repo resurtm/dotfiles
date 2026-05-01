@@ -3,6 +3,7 @@
 ## List
 
 ```
+ImageMagick
 LACT
 alacritty
 alsa-pipewire
@@ -35,6 +36,7 @@ go
 grub-x86_64-efi
 haruna
 htop
+jq
 kde-plasma
 kdegraphics-thumbnailers
 keepassxc
