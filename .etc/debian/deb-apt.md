@@ -51,9 +51,6 @@ fdisk
 file
 file-roller
 findutils
-firmware-intel-graphics
-firmware-iwlwifi
-firmware-sof-signed
 flatpak
 gcc-14-base
 gettext-base
@@ -77,7 +74,6 @@ init
 initramfs-tools
 init-system-helpers
 installation-report
-intel-microcode
 iproute2
 iputils-ping
 keyboard-configuration

@@ -13,7 +13,7 @@ flatpak list --app --columns=name,application | sort >>"$ffile"
 echo "\`\`\`" >>"$ffile"
 
 echo "# Debian Stable, \`dpkg\`/\`apt\`\n\n## List\n\n\`\`\`" >>"$dfile"
-apt-mark showmanual | sort >>"$dfile"
+apt-mark showmanual | grep -Ev 'amd64-microcode|intel-microcode|firmware-' | sort >>"$dfile"
 echo "\`\`\`\n\n## \`sources.list\`\n\n\`\`\`" >>"$dfile"
 cat /etc/apt/sources.list >>"$dfile"
 echo "\`\`\`" >>"$dfile"
