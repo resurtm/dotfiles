@@ -1,0 +1,16 @@
+- oh-my-zsh
+  - https://ohmyz.sh/#install
+- JetBrainsMono Nerd Font
+  - https://www.nerdfonts.com/font-downloads
+  - ~/.local/share/fonts/JetBrainsMono
+- starship
+  - https://github.com/starship/starship/releases
+  - /usr/local/bin/starship
+- neovim:
+  - https://github.com/neovim/neovim/releases
+  - /usr/local/bin/nvim
+- Golang:
+  - https://go.dev/doc/install
+  - /usr/local/go
+- NVM/Node:
+  - https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script
