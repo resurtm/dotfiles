@@ -52,6 +52,7 @@ file
 file-roller
 findutils
 flatpak
+fzf
 gcc-14-base
 gettext-base
 git
@@ -182,6 +183,7 @@ mythes-en-us
 ncurses-base
 ncurses-bin
 ncurses-term
+neovim
 netbase
 netcat-traditional
 network-manager
@@ -224,8 +226,6 @@ udev
 usbutils
 util-linux
 util-linux-extra
-vim
-vim-common
 wamerican
 wget
 whiptail
@@ -252,4 +252,7 @@ deb http://deb.debian.org/debian/ trixie-updates main non-free-firmware non-free
 
 # deb http://deb.debian.org/debian/ trixie-backports main non-free-firmware non-free contrib
 # deb-src http://deb.debian.org/debian/ trixie-backports main non-free-firmware non-free contrib
+
+# https://codeberg.org/justaguylinux/butterrepo
+deb [arch=amd64 signed-by=/usr/share/keyrings/butterrepo.gpg] https://justaguylinux.codeberg.page/butterrepo stable main
 ```
