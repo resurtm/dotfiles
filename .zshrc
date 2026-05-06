@@ -64,10 +64,10 @@ vz() {
 }
 alias vc='NVIM_APPNAME=nvim-nvchad nvim'
 alias vk='NVIM_APPNAME=nvim-kickstart nvim'
-alias va='NVIM_APPNAME=nvim-astrovim nvim'
+alias va='NVIM_APPNAME=nvim-astronvim nvim'
 alias vl='NVIM_APPNAME=nvim-lunarvim nvim'
 vv() {
-  select config in lazyvim kickstart nvchad astrovim lunarvim
+  select config in lazyvim kickstart nvchad astronvim lunarvim
   do NVIM_APPNAME=nvim-$config nvim $@; break; done
 }
 
