@@ -13,6 +13,7 @@ base-devel
 base-system
 bind-utils
 bluez
+bottom
 brother-brscan5
 btop
 chrony
@@ -30,6 +31,7 @@ ffmpegthumbs
 filezilla
 flatpak
 fzf
+gdu
 gimp
 gmp-devel
 go
