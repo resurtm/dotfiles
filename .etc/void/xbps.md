@@ -36,6 +36,7 @@ gimp
 gmp-devel
 go
 grub-x86_64-efi
+gwenview
 haruna
 htop
 jq
