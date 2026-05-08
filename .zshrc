@@ -43,6 +43,9 @@ deno_init() {
 if [[ ":$FPATH:" != *":/home/resurtm/.zsh/completions:"* ]]; then export FPATH="/home/resurtm/.zsh/completions:$FPATH"; fi
 }
 
+# MacOS related -- https://github.com/jesseduffield/lazygit/issues/1669#issuecomment-1120129863
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # -- rust/cargo
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
