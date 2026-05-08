@@ -190,7 +190,9 @@ export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 
 # default text editor
-export EDITOR="NVIM_APPNAME=nvim-lazyvim nvim"
+# export EDITOR="NVIM_APPNAME=nvim-lazyvim nvim"
+export EDITOR="nvim"
+# export EDITOR="nvr"
 
 # doom emacs
 export PATH="$HOME/.config/emacs/bin/:$PATH"
