@@ -46,6 +46,7 @@ keepassxc
 kwrite
 lazygit
 libspa-bluetooth
+luarocks
 lvm2
 mesa-demos
 mesa-dri
@@ -59,6 +60,7 @@ polkit
 power-profiles-daemon
 print-manager
 psmisc
+python3-pip
 ripgrep
 rpm
 skanpage
