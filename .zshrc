@@ -64,7 +64,9 @@ vz() {
 }
 alias vc='NVIM_APPNAME=nvim-nvchad nvim'
 alias vk='NVIM_APPNAME=nvim-kickstart nvim'
-alias va='NVIM_APPNAME=nvim-astronvim nvim'
+va() {
+  NVIM_APPNAME=nvim-astronvim nvim $@
+}
 alias vl='NVIM_APPNAME=nvim-lunarvim nvim'
 vv() {
   select config in lazyvim kickstart nvchad astronvim lunarvim
