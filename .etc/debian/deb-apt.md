@@ -2,7 +2,7 @@
 
 ## Stats
 
-* Total items: 236
+* Total items: 235
 
 ## List
 
@@ -57,7 +57,6 @@ file
 file-roller
 findutils
 flatpak
-fzf
 gcc-14-base
 gettext-base
 git
@@ -203,6 +202,7 @@ perl
 perl-base
 procps
 python3.13-venv
+python3-pip
 readline-common
 reportbug
 resolvconf
@@ -236,7 +236,6 @@ wamerican
 wget
 whiptail
 wireguard-tools
-wl-clipboard
 wtmpdb
 xz-utils
 yadm

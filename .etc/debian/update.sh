@@ -1,6 +1,33 @@
 #!/usr/bin/env sh
 set -euo pipefail
 
+# ┌────────────────────────────┐
+# │ Step 1. Update everything. │
+# └────────────────────────────┘
+
+# Step 1.1. Nix, home manager
+home-manager switch
+nix-collect-garbage -d
+
+# Step 1.2. Flatpak.
+if [ "$(flatpak config --get languages 2>/dev/null)" != "en;de" ]; then
+	flatpak config --set languages "en;de"
+fi
+flatpak update
+
+# Step 1.3. apt/dpkg.
+sudo apt update
+sudo apt dist-upgrade
+sudo apt autoremove
+
+# Step 1.4. Oh My Zsh, Rust
+zsh "$HOME/.oh-my-zsh/tools/upgrade.sh" # same as "omz update"
+rustup update
+
+# ┌──────────────────────────┐
+# │ Step 2. Generate report. │
+# └──────────────────────────┘
+
 dir="${HOME}/.etc/debian"
 ffile="${dir}/flatpak.md"
 dfile="${dir}/deb-apt.md"
@@ -43,3 +70,8 @@ echo '```' >>"$efile"
 	systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
 } | awk '{print $1}' | sort >>"$efile"
 echo '```' >>"$efile"
+
+# ┌─────────────────────┐
+# │ Step 99. fastfetch. │
+# └─────────────────────┘
+fastfetch
