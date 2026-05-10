@@ -14,3 +14,6 @@
 - Butterbian/ButterRepo
   - https://butterbian.org/
   - https://codeberg.org/justaguylinux/butterrepo#installation
+- Fast Forward Packages
+  - https://fastforward.debian.net/
+  - https://fastforward.debian.net/doc/installation/

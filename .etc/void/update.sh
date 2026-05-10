@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -euo pipefail
 
 dir="${HOME}/.etc/void"
 ffile="${dir}/flatpak.md"

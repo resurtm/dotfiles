@@ -1,5 +1,9 @@
 # Debian Stable, `dpkg`/`apt`
 
+## Stats
+
+* Total items: 236
+
 ## List
 
 ```
@@ -31,6 +35,7 @@ cups-pk-helper
 curl
 dash
 dbus
+ddcutil
 debconf
 debconf-i18n
 debian-archive-keyring
@@ -188,6 +193,7 @@ netbase
 netcat-traditional
 network-manager
 nftables
+nix-bin
 openssh-client
 openssl-provider-legacy
 os-prober
@@ -230,29 +236,11 @@ wamerican
 wget
 whiptail
 wireguard-tools
+wl-clipboard
 wtmpdb
 xz-utils
 yadm
 zlib1g
 zsh
 zstd
-```
-
-## `sources.list`
-
-```
-deb http://deb.debian.org/debian/ trixie main non-free-firmware non-free contrib
-# deb-src http://deb.debian.org/debian/ trixie main non-free-firmware non-free contrib
-
-deb http://security.debian.org/debian-security trixie-security main non-free-firmware non-free contrib
-# deb-src http://security.debian.org/debian-security trixie-security main non-free-firmware non-free contrib
-
-deb http://deb.debian.org/debian/ trixie-updates main non-free-firmware non-free contrib
-# deb-src http://deb.debian.org/debian/ trixie-updates main non-free-firmware non-free contrib
-
-# deb http://deb.debian.org/debian/ trixie-backports main non-free-firmware non-free contrib
-# deb-src http://deb.debian.org/debian/ trixie-backports main non-free-firmware non-free contrib
-
-# https://codeberg.org/justaguylinux/butterrepo
-deb [arch=amd64 signed-by=/usr/share/keyrings/butterrepo.gpg] https://justaguylinux.codeberg.page/butterrepo stable main
 ```

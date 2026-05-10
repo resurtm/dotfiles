@@ -1,5 +1,10 @@
 # Debian Stable, Flatpak
 
+## Stats
+
+* Total applications: 4
+* Total items: 19
+
 ## List
 
 ```
