@@ -1,7 +1,5 @@
 # Void XBPS
-
 ## List
-
 ```
 ImageMagick
 LACT
@@ -84,9 +82,7 @@ yazi
 zlib-devel
 zsh
 ```
-
 ## Ignored
-
 ```
 ignorepkg=ipw2100-firmware
 ignorepkg=ipw2200-firmware

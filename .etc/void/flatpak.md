@@ -1,7 +1,5 @@
 # Void Flatpak
-
 ## List
-
 ```
 Anki	net.ankiweb.Anki
 Brave	com.brave.Browser

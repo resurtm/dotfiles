@@ -1,13 +1,9 @@
 # Other things
-
 ## Groups
-
 ```
 resurtm : resurtm wheel lp audio video storage scanner network kvm input plugdev users xbuilder dbus socklog bluetooth
 ```
-
 ## Runit
-
 ```
 agetty-tty1
 agetty-tty2

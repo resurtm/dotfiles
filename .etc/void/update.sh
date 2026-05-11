@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -euo pipefail
 
 dir="${HOME}/.etc/void"
@@ -9,18 +9,28 @@ efile="${dir}/etc.md"
 rm -f -- "$ffile" "$xfile" "$efile"
 mkdir -p -- "$dir"
 
-echo "# Void Flatpak\n\n## List\n\n\`\`\`" >>"$ffile"
+echo '# Void Flatpak' >>"$ffile"
+echo '## List' >>"$ffile"
+echo '```' >>"$ffile"
 flatpak list --app --columns=name,application | sort >>"$ffile"
-echo "\`\`\`" >>"$ffile"
+echo '```' >>"$ffile"
 
-echo "# Void XBPS\n\n## List\n\n\`\`\`" >>"$xfile"
+echo '# Void XBPS' >>"$xfile"
+echo '## List' >>"$xfile"
+echo '```' >>"$xfile"
 xpkg -m | sort >>"$xfile"
-echo "\`\`\`\n\n## Ignored\n\n\`\`\`" >>"$xfile"
+echo '```' >>"$xfile"
+echo '## Ignored' >>"$xfile"
+echo '```' >>"$xfile"
 cat /etc/xbps.d/ignorepkg.conf | sort >>"$xfile"
-echo "\`\`\`" >>"$xfile"
+echo '```' >>"$xfile"
 
-echo "# Other things\n\n## Groups\n\n\`\`\`" >>"$efile"
+echo '# Other things' >>"$efile"
+echo '## Groups' >>"$efile"
+echo '```' >>"$efile"
 groups resurtm >>"$efile"
-echo "\`\`\`\n\n## Runit\n\n\`\`\`" >>"$efile"
+echo '```' >>"$efile"
+echo '## Runit' >>"$efile"
+echo '```' >>"$efile"
 ls /var/service/ | sort >>"$efile"
-echo "\`\`\`" >>"$efile"
+echo '```' >>"$efile"
