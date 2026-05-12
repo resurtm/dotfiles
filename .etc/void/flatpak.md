@@ -8,6 +8,7 @@ Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Joplin	net.cozic.joplin_desktop
 Mullvad Browser	net.mullvad.MullvadBrowser
+ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors
 Steam	com.valvesoftware.Steam
 Telegram	org.telegram.desktop
 ```
