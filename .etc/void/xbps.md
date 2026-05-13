@@ -28,7 +28,6 @@ filezilla
 flatpak
 gimp
 gmp-devel
-go
 grub-x86_64-efi
 gwenview
 haruna
@@ -39,7 +38,6 @@ kdegraphics-thumbnailers
 keepassxc
 kwrite
 libspa-bluetooth
-luarocks
 lvm2
 mesa-demos
 mesa-dri
