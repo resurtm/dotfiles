@@ -45,9 +45,16 @@
         ${darwin.system} = darwin.pkgs.nixfmt-tree;
       };
       homeConfigurations = {
-        x260 = home-manager.lib.homeManagerConfiguration {
+        tower = home-manager.lib.homeManagerConfiguration {
           inherit (linux) pkgs;
-          modules = [ ./profiles/x260 ];
+          modules = [ ./profiles/tower ];
+          extraSpecialArgs = {
+            inherit (linux) system pkgs-unstable;
+          };
+        };
+        mini = home-manager.lib.homeManagerConfiguration {
+          inherit (linux) pkgs;
+          modules = [ ./profiles/mini ];
           extraSpecialArgs = {
             inherit (linux) system pkgs-unstable;
           };
@@ -55,6 +62,13 @@
         t14 = home-manager.lib.homeManagerConfiguration {
           inherit (linux) pkgs;
           modules = [ ./profiles/t14 ];
+          extraSpecialArgs = {
+            inherit (linux) system pkgs-unstable;
+          };
+        };
+        x260 = home-manager.lib.homeManagerConfiguration {
+          inherit (linux) pkgs;
+          modules = [ ./profiles/x260 ];
           extraSpecialArgs = {
             inherit (linux) system pkgs-unstable;
           };

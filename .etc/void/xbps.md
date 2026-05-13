@@ -11,7 +11,6 @@ base-devel
 base-system
 bind-utils
 bluez
-bottom
 brother-brscan5
 btop
 chrony
@@ -24,12 +23,9 @@ elogind
 exiftool
 fastfetch
 fcron
-fd
 ffmpegthumbs
 filezilla
 flatpak
-fzf
-gdu
 gimp
 gmp-devel
 go
@@ -42,7 +38,6 @@ kde-plasma
 kdegraphics-thumbnailers
 keepassxc
 kwrite
-lazygit
 libspa-bluetooth
 luarocks
 lvm2
@@ -52,19 +47,17 @@ mesa-vaapi
 ncurses-libtinfo-devel
 ncurses-libtinfo-libs
 neovim
-nerd-fonts
+nix
 okular
 polkit
 power-profiles-daemon
 print-manager
 psmisc
 python3-pip
-ripgrep
 rpm
 skanpage
 socklog-void
 spectacle
-starship
 system-config-printer
 terminus-font
 tmux
@@ -78,7 +71,6 @@ xmirror
 xournalpp
 xtools
 yadm
-yazi
 zlib-devel
 zsh
 ```

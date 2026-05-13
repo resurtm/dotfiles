@@ -1,7 +1,7 @@
 # Other things
 ## Groups
 ```
-resurtm : resurtm wheel lp audio video storage scanner network kvm input plugdev users xbuilder dbus socklog bluetooth
+resurtm : resurtm wheel lp audio video storage scanner network kvm input plugdev users xbuilder dbus socklog bluetooth nixbld
 ```
 ## Runit
 ```
@@ -20,6 +20,7 @@ elogind
 fcron
 lact
 nanoklogd
+nix-daemon
 polkitd
 power-profiles-daemon
 saned
