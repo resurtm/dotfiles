@@ -181,10 +181,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # -- zsh startup profile -- end
 # set +x
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/kckj076/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 # snap path(s)
 export PATH="/snap/bin:$PATH"
 

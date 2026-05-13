@@ -10,4 +10,6 @@
     ../../modules/tui
   ];
   home.stateVersion = "25.11";
+  home.username = "resurtm";
+  home.homeDirectory = "/home/resurtm";
 }

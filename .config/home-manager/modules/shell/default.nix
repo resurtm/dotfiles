@@ -1,6 +1,6 @@
-{ pkgs-unstable, ... }:
+{ ... }:
 {
-  home.packages = [
-    pkgs-unstable.starship
-  ];
+  programs = {
+    starship.enable = true;
+  };
 }

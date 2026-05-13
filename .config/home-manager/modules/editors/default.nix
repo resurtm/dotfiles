@@ -1,6 +1,9 @@
 { pkgs-unstable, ... }:
 {
-  home.packages = [
-    pkgs-unstable.neovim
-  ];
+  programs = {
+    neovim = {
+      enable = true;
+      package = pkgs-unstable.neovim-unwrapped;
+    };
+  };
 }

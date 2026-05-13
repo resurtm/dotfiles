@@ -1,8 +1,13 @@
-{ pkgs-unstable, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
+  programs = {
+    go = {
+      enable = true;
+      package = pkgs-unstable.go;
+    };
+  };
   home.packages = [
-    pkgs-unstable.go
-    pkgs-unstable.nodejs
+    pkgs.nodejs_24
     pkgs-unstable.lua5_1
     pkgs-unstable.lua51Packages.luarocks
   ];
