@@ -5,7 +5,7 @@
 * Total applications: 10
 * Total items: 23
 
-## List
+## Applications
 
 ```
 Anki	net.ankiweb.Anki
@@ -18,6 +18,34 @@ Mullvad Browser	net.mullvad.MullvadBrowser
 ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors
 Steam	com.valvesoftware.Steam
 Telegram	org.telegram.desktop
+```
+
+## Items
+
+```
+Anki	net.ankiweb.Anki
+Brave	com.brave.Browser
+Breeze GTK theme	org.gtk.Gtk3theme.Breeze
+Codecs Extra Extension	org.freedesktop.Platform.codecs-extra
+Dropbox	com.dropbox.Client
+Firefox	org.mozilla.firefox
+Flatseal	com.github.tchx84.Flatseal
+Freedesktop Platform	org.freedesktop.Platform
+GNOME Application Platform version 49	org.gnome.Platform
+GNOME Application Platform version 50	org.gnome.Platform
+Joplin	net.cozic.joplin_desktop
+KDE Application Platform	org.kde.Platform
+MangoHud	org.freedesktop.Platform.VulkanLayer.MangoHud
+Mesa	org.freedesktop.Platform.GL.default
+Mesa	org.freedesktop.Platform.GL32.default
+Mesa (Extra)	org.freedesktop.Platform.GL.default
+Mesa (Extra)	org.freedesktop.Platform.GL32.default
+Mullvad Browser	net.mullvad.MullvadBrowser
+ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors
+Steam	com.valvesoftware.Steam
+Telegram	org.telegram.desktop
+i386	org.freedesktop.Platform.Compat.i386
+i386	org.freedesktop.Platform.codecs_extra.i386
 ```
 
 # XBPS
