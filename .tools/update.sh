@@ -51,9 +51,14 @@ report_flatpak() {
 	flatpak list | wc -l >>"$1"
 	printf '\n' >>"$1"
 
-	printf "## List\n\n" >>"$1"
+	printf "## Applications\n\n" >>"$1"
 	printf '```\n' >>"$1"
 	flatpak list --app --columns=name,application | sort >>"$1"
+	printf '```\n\n' >>"$1"
+
+	printf "## Items\n\n" >>"$1"
+	printf '```\n' >>"$1"
+	flatpak list --columns=name,application | sort >>"$1"
 	printf '```\n\n' >>"$1"
 }
 

@@ -3,14 +3,36 @@
 ## Stats
 
 * Total applications: 4
-* Total items: 19
+* Total items: 17
 
-## List
+## Applications
 
 ```
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 KeePassXC	org.keepassxc.KeePassXC
+Steam	com.valvesoftware.Steam
+```
+
+## Items
+
+```
+Adwaita theme	org.kde.KStyle.Adwaita
+Codecs Extra Extension	org.freedesktop.Platform.codecs-extra
+Firefox	org.mozilla.firefox
+Flatseal	com.github.tchx84.Flatseal
+Freedesktop Platform	org.freedesktop.Platform
+GNOME Application Platform version 49	org.gnome.Platform
+i386	org.freedesktop.Platform.codecs_extra.i386
+i386	org.freedesktop.Platform.Compat.i386
+KDE Application Platform	org.kde.Platform
+KeePassXC	org.keepassxc.KeePassXC
+MangoHud	org.freedesktop.Platform.VulkanLayer.MangoHud
+Mesa (Extra)	org.freedesktop.Platform.GL32.default
+Mesa (Extra)	org.freedesktop.Platform.GL.default
+Mesa	org.freedesktop.Platform.GL32.default
+Mesa	org.freedesktop.Platform.GL.default
+QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations
 Steam	com.valvesoftware.Steam
 ```
 
@@ -208,7 +230,7 @@ netbase
 netcat-traditional
 network-manager
 nftables
-nix-bin
+nix-setup-systemd
 openssh-client
 openssl-provider-legacy
 os-prober
