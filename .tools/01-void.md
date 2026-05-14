@@ -1,5 +1,33 @@
-# Void XBPS
+# Flatpak
+
+## Stats
+
+* Total applications: 10
+* Total items: 23
+
 ## List
+
+```
+Anki	net.ankiweb.Anki
+Brave	com.brave.Browser
+Dropbox	com.dropbox.Client
+Firefox	org.mozilla.firefox
+Flatseal	com.github.tchx84.Flatseal
+Joplin	net.cozic.joplin_desktop
+Mullvad Browser	net.mullvad.MullvadBrowser
+ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors
+Steam	com.valvesoftware.Steam
+Telegram	org.telegram.desktop
+```
+
+# XBPS
+
+## Stats
+
+* Total items: 70
+
+## List
+
 ```
 ImageMagick
 LACT
@@ -72,7 +100,9 @@ yadm
 zlib-devel
 zsh
 ```
+
 ## Ignored
+
 ```
 ignorepkg=ipw2100-firmware
 ignorepkg=ipw2200-firmware
@@ -85,3 +115,53 @@ ignorepkg=sddm
 ignorepkg=sddm-kcm
 ignorepkg=zd1211-firmware
 ```
+
+## Services (`runit`)
+
+```
+agetty-tty1
+agetty-tty2
+agetty-tty3
+agetty-tty4
+agetty-tty5
+agetty-tty6
+bluetoothd
+chronyd
+cupsd
+dbus
+dhcpcd
+elogind
+fcron
+lact
+nanoklogd
+nix-daemon
+polkitd
+power-profiles-daemon
+saned
+socklog-unix
+udevd
+wireguard
+```
+
+# Groups
+
+```
+audio
+bluetooth
+dbus
+input
+kvm
+lp
+network
+nixbld
+plugdev
+resurtm
+scanner
+socklog
+storage
+users
+video
+wheel
+xbuilder
+```
+
