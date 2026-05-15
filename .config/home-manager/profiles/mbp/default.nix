@@ -7,6 +7,6 @@ in
     ../common
     ./packages.nix
   ];
-  home.username = local.username;
-  home.homeDirectory = local.homeDirectory;
+  home.username = local.home.username;
+  home.homeDirectory = local.home.homeDirectory;
 }

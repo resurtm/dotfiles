@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ../common
+    ../linux
     ./packages.nix
   ];
 }
