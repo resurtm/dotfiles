@@ -1,4 +1,6 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  programs.anki.enable = true;
+  home.packages = [
+    pkgs.anki-bin
+  ];
 }

@@ -6,12 +6,14 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    mac-app-util.url = "github:hraban/mac-app-util";
   };
 
   outputs =
     { nixpkgs
     , nixpkgs-unstable
     , home-manager
+    , mac-app-util
     , ...
     }:
     let
@@ -74,7 +76,10 @@
         };
         mbp = home-manager.lib.homeManagerConfiguration {
           inherit (darwin) pkgs;
-          modules = [ ./profiles/mbp ];
+          modules = [
+            mac-app-util.homeManagerModules.default
+            ./profiles/mbp
+          ];
           extraSpecialArgs = {
             inherit (darwin) system pkgs-unstable;
           };
