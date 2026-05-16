@@ -2,9 +2,30 @@
 set -euo pipefail
 shopt -s expand_aliases
 
+clean=false
+
+for arg in "$@"; do
+	case $arg in
+	--clean)
+		clean=true
+		;;
+	esac
+done
+
+RESET='\033[0m'
+BOLD='\033[1m'
+CYAN='\033[0;36m'
+section() {
+	local label="${1:-}"
+	local line="══════════════════════════════════════════════"
+	printf "\n${BOLD}${CYAN}%s${RESET}\n" "$line"
+	[[ -n "$label" ]] && printf "${BOLD}${CYAN}  %s${RESET}\n" "$label"
+	printf "${BOLD}${CYAN}%s${RESET}\n\n" "$line"
+}
+
+section '🧰 Nix / Home Manager'
 hostname="$(hostname)"
 alias hm='NIX_CONFIG="experimental-features = nix-command flakes" home-manager'
-
 if [ "$hostname" == big-box ]; then
 	hm switch --flake ~/.config/home-manager#tower
 elif [ "$hostname" == mini-box ]; then
@@ -18,6 +39,13 @@ else
 	exit 1
 fi
 
+if [ "$clean" = true ]; then
+	section '🧹 Nix / Home Manager -- Cleanup'
+	nix-collect-garbage -d
+	nix-collect-garbage
+fi
+
+section '🔧 Flatpak'
 if [ "$(flatpak --system config --get languages 2>/dev/null)" != "en;de" ]; then
 	flatpak --system config --set languages "en;de"
 fi
@@ -25,21 +53,55 @@ if [ "$(flatpak --user config --get languages 2>/dev/null)" != "en;de" ]; then
 	flatpak --user config --set languages "en;de"
 fi
 flatpak --user update
+if [ "$clean" = true ]; then
+	section '🧹 Flatpak -- Cleanup'
+	flatpak --system remove --unused
+	flatpak --user remove --unused
+fi
 
 if [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
+	section '🌀 XBPS'
 	sudo xbps-install -Su
-	sudo xbps-remove -o
+	if [ "$clean" = true ]; then
+		section '🧹 XBPS -- Cleanup'
+		sudo xbps-remove -o
+		sudo xbps-remove -O
+		sudo vkpurge rm all
+	fi
 elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
+	section '🔮 XBPS'
 	sudo apt update
 	sudo apt dist-upgrade
-	sudo apt autoremove
+	if [ "$clean" = true ]; then
+		section '🧹 APT -- Cleanup'
+		sudo apt clean
+		sudo apt autoclean
+		sudo apt autoremove --purge -y
+		# FIXME: test this on a real Debian machine.
+		# dpkg -l | awk '/^rc/ {print $2}' | xargs -r sudo dpkg --purge
+		# sudo rm -rf /var/lib/apt/lists/*
+	fi
 else
 	printf 'xbps/apt -- hostname is not supported\n'
 	exit 1
 fi
 
+section '⚙️ Rustup'
 rustup update
+
+if [ "$clean" = true ]; then
+	section '🧹 Rustup -- Cleanup'
+	rm -rfv ~/.rustup/downloads
+	rm -rfv ~/.cargo/registry/cache
+	rm -rfv ~/.cargo/registry/src
+	rm -rfv ~/.cargo/git/db
+	rm -rfv ~/.cargo/git/checkouts
+fi
+
+section '🐚 Oh My Zsh'
 zsh "$HOME/.oh-my-zsh/tools/upgrade.sh"
+
+section '📝 Reports'
 
 report_flatpak() {
 	printf '# Flatpak\n\n' >>"$1"
@@ -128,4 +190,6 @@ fi
 
 report_groups "$file"
 
+section '⚠️ Fastfetch'
 fastfetch
+section '✅ All Done'
