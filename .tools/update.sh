@@ -77,9 +77,8 @@ elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
 		sudo apt clean
 		sudo apt autoclean
 		sudo apt autoremove --purge -y
-		# FIXME: test this on a real Debian machine.
-		# dpkg -l | awk '/^rc/ {print $2}' | xargs -r sudo dpkg --purge
-		# sudo rm -rf /var/lib/apt/lists/*
+		dpkg -l | awk '/^rc/ {print $2}' | xargs -r sudo dpkg --purge
+		sudo rm -rf /var/lib/apt/lists/*
 	fi
 else
 	printf 'xbps/apt -- hostname is not supported\n'
