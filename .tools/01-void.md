@@ -64,7 +64,7 @@ openh264	org.freedesktop.Platform.openh264
 
 ## Stats
 
-* Total items: 70
+* Total items: 71
 
 ## List
 
@@ -122,6 +122,7 @@ psmisc
 python3-pip
 rpm
 skanpage
+smplayer
 socklog-void
 spectacle
 system-config-printer
