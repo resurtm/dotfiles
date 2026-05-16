@@ -69,7 +69,7 @@ if [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 		sudo vkpurge rm all
 	fi
 elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
-	section '🔮 XBPS'
+	section '🔮 APT'
 	sudo apt update
 	sudo apt dist-upgrade
 	if [ "$clean" = true ]; then
@@ -110,7 +110,7 @@ report_flatpak() {
 	printf '* Total applications: ' >>"$1"
 	flatpak list --app | wc -l >>"$1"
 	printf '* Total items: ' >>"$1"
-	flatpak list | wc -l >>"$1"
+	flatpak list | grep -vi 'intel' | wc -l >>"$1"
 	printf '\n' >>"$1"
 
 	printf "## Applications\n\n" >>"$1"
@@ -120,7 +120,7 @@ report_flatpak() {
 
 	printf "## Items\n\n" >>"$1"
 	printf '```\n' >>"$1"
-	flatpak list --columns=name,application | sort >>"$1"
+	flatpak list --columns=name,application | grep -vi 'intel' | sort >>"$1"
 	printf '```\n\n' >>"$1"
 }
 
