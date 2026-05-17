@@ -180,6 +180,7 @@ polkitd
 power-profiles-daemon
 saned
 socklog-unix
+sshd
 udevd
 wireguard
 ```
