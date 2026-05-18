@@ -1,17 +1,12 @@
-{ pkgs-unstable, ... }:
+{ ... }:
 {
-  programs = {
-    fd = {
-      enable = true;
-      package = pkgs-unstable.fd;
-    };
-    fzf = {
-      enable = true;
-      package = pkgs-unstable.fzf;
-    };
-    ripgrep.enable = true;
-  };
-  home.packages = [
-    pkgs-unstable.gdu
+  imports = [
+    # ./colima.nix
+    ./fastfetch.nix
+    ./fd.nix
+    ./fzf.nix
+    ./gdu.nix
+    ./ripgrep.nix
+    ./yadm.nix
   ];
 }

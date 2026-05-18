@@ -1,15 +1,9 @@
 { pkgs-unstable, ... }:
 {
-  programs = {
-    lazygit = {
-      enable = true;
-      package = pkgs-unstable.lazygit;
-      settings = {
-        disableStartupPopups = true;
-        os.editPreset = "nvim-remote";
-      };
-    };
-    lazydocker.enable = true;
-    bottom.enable = true;
-  };
+  imports = [
+    ./bottom.nix
+    ./htop.nix
+    ./lazydocker.nix
+    ./lazygit.nix
+  ];
 }
