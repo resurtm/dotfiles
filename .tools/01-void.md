@@ -64,7 +64,7 @@ openh264	org.freedesktop.Platform.openh264
 
 ## Stats
 
-* Total items: 71
+* Total items: 68
 
 ## List
 
@@ -99,7 +99,6 @@ gmp-devel
 grub-x86_64-efi
 gwenview
 haruna
-htop
 jq
 kde-plasma
 kdegraphics-thumbnailers
@@ -119,7 +118,6 @@ polkit
 power-profiles-daemon
 print-manager
 psmisc
-python3-pip
 rpm
 skanpage
 smplayer
@@ -137,7 +135,6 @@ wl-clipboard
 xmirror
 xournalpp
 xtools
-yadm
 zlib-devel
 zsh
 ```
