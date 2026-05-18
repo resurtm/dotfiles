@@ -40,7 +40,7 @@ Steam	com.valvesoftware.Steam
 
 ## Stats
 
-* Total items: 235
+* Total items: 231
 
 ## List
 
@@ -58,7 +58,6 @@ bash-completion
 bind9-dnsutils
 bind9-host
 bsdutils
-btop
 build-essential
 busybox
 bzip2
@@ -89,7 +88,6 @@ dpkg
 e2fsprogs
 evolution
 evolution-plugins
-fastfetch
 fdisk
 file
 file-roller
@@ -108,7 +106,6 @@ gstreamer1.0-libav
 gstreamer1.0-plugins-ugly
 gzip
 hostname
-htop
 hunspell-en-us
 hyphen-en-us
 ifupdown
@@ -276,7 +273,6 @@ whiptail
 wireguard-tools
 wtmpdb
 xz-utils
-yadm
 zlib1g
 zsh
 zstd
