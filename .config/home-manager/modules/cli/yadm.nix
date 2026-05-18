@@ -1,6 +1,4 @@
 { pkgs, ... }:
 {
-  home.packages = [
-    pkgs.yadm
-  ];
+  home.packages = with pkgs; [ yadm ];
 }

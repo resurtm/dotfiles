@@ -33,6 +33,11 @@
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
+          # this is OK
+          config.permittedInsecurePackages = [
+            "lima-full-1.2.2"
+            "lima-additional-guestagents-1.2.2"
+          ];
         };
         pkgs-unstable = import nixpkgs-unstable {
           inherit system;

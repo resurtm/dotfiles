@@ -1,6 +1,4 @@
 { ... }:
 {
-  imports = [
-    ../../modules/cli/colima.nix
-  ];
+  imports = [ ../../modules/docker ];
 }

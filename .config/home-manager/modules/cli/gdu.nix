@@ -1,6 +1,4 @@
 { pkgs-unstable, ... }:
 {
-  home.packages = [
-    pkgs-unstable.gdu
-  ];
+  home.packages = with pkgs-unstable; [ gdu ];
 }
