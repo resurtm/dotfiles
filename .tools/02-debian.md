@@ -40,7 +40,7 @@ Steam	com.valvesoftware.Steam
 
 ## Stats
 
-* Total items: 232
+* Total items: 233
 
 ## List
 
@@ -247,6 +247,7 @@ sed
 sensible-utils
 shim-signed
 shotwell
+smplayer
 sqv
 systemd
 systemd-cryptsetup
