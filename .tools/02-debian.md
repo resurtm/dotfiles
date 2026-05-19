@@ -40,7 +40,7 @@ Steam	com.valvesoftware.Steam
 
 ## Stats
 
-* Total items: 231
+* Total items: 232
 
 ## List
 
@@ -91,6 +91,7 @@ evolution-plugins
 fdisk
 file
 file-roller
+filezilla
 findutils
 flatpak
 gcc-14-base
