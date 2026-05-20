@@ -2,45 +2,68 @@
 
 ## Stats
 
-* Total applications: 4
-* Total items: 17
+* Total applications: 12
+* Total items: 32
 
 ## Applications
 
 ```
+Anki	net.ankiweb.Anki
+Battle for Wesnoth	org.wesnoth.Wesnoth
+Dropbox	com.dropbox.Client
+Dungeon Crawl Stone Soup	org.develz.Crawl
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
+Joplin	net.cozic.joplin_desktop
 KeePassXC	org.keepassxc.KeePassXC
 Steam	com.valvesoftware.Steam
+Telegram	org.telegram.desktop
+Warzone 2100	net.wz2100.wz2100
+Widelands	org.widelands.Widelands
 ```
 
 ## Items
 
 ```
 Adwaita theme	org.kde.KStyle.Adwaita
+Adwaita theme	org.kde.KStyle.Adwaita
+Anki	net.ankiweb.Anki
+Battle for Wesnoth	org.wesnoth.Wesnoth
 Codecs Extra Extension	org.freedesktop.Platform.codecs-extra
+Dropbox	com.dropbox.Client
+Dungeon Crawl Stone Soup	org.develz.Crawl
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Freedesktop Platform	org.freedesktop.Platform
+Freedesktop Platform	org.freedesktop.Platform
 GNOME Application Platform version 49	org.gnome.Platform
+GNOME Application Platform version 50	org.gnome.Platform
 i386	org.freedesktop.Platform.codecs_extra.i386
 i386	org.freedesktop.Platform.Compat.i386
+Joplin	net.cozic.joplin_desktop
+KDE Application Platform	org.kde.Platform
 KDE Application Platform	org.kde.Platform
 KeePassXC	org.keepassxc.KeePassXC
 MangoHud	org.freedesktop.Platform.VulkanLayer.MangoHud
 Mesa (Extra)	org.freedesktop.Platform.GL32.default
 Mesa (Extra)	org.freedesktop.Platform.GL.default
+Mesa (Extra)	org.freedesktop.Platform.GL.default
 Mesa	org.freedesktop.Platform.GL32.default
 Mesa	org.freedesktop.Platform.GL.default
+Mesa	org.freedesktop.Platform.GL.default
+openh264	org.freedesktop.Platform.openh264
 QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations
 Steam	com.valvesoftware.Steam
+Telegram	org.telegram.desktop
+Warzone 2100	net.wz2100.wz2100
+Widelands	org.widelands.Widelands
 ```
 
 # `dpkg`/`apt`
 
 ## Stats
 
-* Total items: 233
+* Total items: 235
 
 ## List
 
@@ -98,6 +121,7 @@ gcc-14-base
 gettext-base
 git
 gnome-core
+gnome-shell-extension-manager
 gnome-tweaks
 grep
 groff-base
@@ -269,6 +293,7 @@ udev
 usbutils
 util-linux
 util-linux-extra
+vlc
 wamerican
 wget
 whiptail
