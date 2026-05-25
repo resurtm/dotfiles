@@ -2,8 +2,8 @@
 
 ## Stats
 
-* Total applications: 12
-* Total items: 32
+* Total applications: 13
+* Total items: 33
 
 ## Applications
 
@@ -12,6 +12,7 @@ Anki	net.ankiweb.Anki
 Battle for Wesnoth	org.wesnoth.Wesnoth
 Dropbox	com.dropbox.Client
 Dungeon Crawl Stone Soup	org.develz.Crawl
+fheroes2	io.github.ihhub.Fheroes2
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Joplin	net.cozic.joplin_desktop
@@ -32,6 +33,7 @@ Battle for Wesnoth	org.wesnoth.Wesnoth
 Codecs Extra Extension	org.freedesktop.Platform.codecs-extra
 Dropbox	com.dropbox.Client
 Dungeon Crawl Stone Soup	org.develz.Crawl
+fheroes2	io.github.ihhub.Fheroes2
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Freedesktop Platform	org.freedesktop.Platform
@@ -63,7 +65,7 @@ Widelands	org.widelands.Widelands
 
 ## Stats
 
-* Total items: 235
+* Total items: 236
 
 ## List
 
@@ -139,6 +141,7 @@ init
 initramfs-tools
 init-system-helpers
 installation-report
+inxi
 iproute2
 iputils-ping
 keyboard-configuration
@@ -325,6 +328,7 @@ e2scrub_reap.service
 getty@.service
 grub-common.service
 keyboard-setup.service
+lm-sensors.service
 low-memory-monitor.service
 lvm2-lvmpolld.socket
 lvm2-monitor.service
