@@ -2,8 +2,8 @@
 
 ## Stats
 
-* Total applications: 13
-* Total items: 33
+* Total applications: 15
+* Total items: 35
 
 ## Applications
 
@@ -12,11 +12,13 @@ Anki	net.ankiweb.Anki
 Battle for Wesnoth	org.wesnoth.Wesnoth
 Dropbox	com.dropbox.Client
 Dungeon Crawl Stone Soup	org.develz.Crawl
+Ente Auth	io.ente.auth
 fheroes2	io.github.ihhub.Fheroes2
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Joplin	net.cozic.joplin_desktop
 KeePassXC	org.keepassxc.KeePassXC
+Mullvad Browser	net.mullvad.MullvadBrowser
 Steam	com.valvesoftware.Steam
 Telegram	org.telegram.desktop
 Warzone 2100	net.wz2100.wz2100
@@ -33,6 +35,7 @@ Battle for Wesnoth	org.wesnoth.Wesnoth
 Codecs Extra Extension	org.freedesktop.Platform.codecs-extra
 Dropbox	com.dropbox.Client
 Dungeon Crawl Stone Soup	org.develz.Crawl
+Ente Auth	io.ente.auth
 fheroes2	io.github.ihhub.Fheroes2
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
@@ -53,6 +56,7 @@ Mesa (Extra)	org.freedesktop.Platform.GL.default
 Mesa	org.freedesktop.Platform.GL32.default
 Mesa	org.freedesktop.Platform.GL.default
 Mesa	org.freedesktop.Platform.GL.default
+Mullvad Browser	net.mullvad.MullvadBrowser
 openh264	org.freedesktop.Platform.openh264
 QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations
 Steam	com.valvesoftware.Steam
@@ -65,7 +69,7 @@ Widelands	org.widelands.Widelands
 
 ## Stats
 
-* Total items: 236
+* Total items: 239
 
 ## List
 
@@ -97,6 +101,7 @@ cups-pk-helper
 curl
 dash
 dbus
+dconf-editor
 ddcutil
 debconf
 debconf-i18n
@@ -121,6 +126,7 @@ findutils
 flatpak
 gcc-14-base
 gettext-base
+gir1.2-gmenu-3.0
 git
 gnome-core
 gnome-shell-extension-manager
@@ -174,6 +180,7 @@ libext2fs2t64
 libfdisk1
 libgcc-s1
 libgmp10
+libgnome-menu-3-0
 libgsf-bin
 libgssapi-krb5-2
 libhogweed6t64
