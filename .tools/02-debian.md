@@ -3,7 +3,7 @@
 ## Stats
 
 * Total applications: 15
-* Total items: 35
+* Total items: 34
 
 ## Applications
 
@@ -41,7 +41,6 @@ Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Freedesktop Platform	org.freedesktop.Platform
 Freedesktop Platform	org.freedesktop.Platform
-GNOME Application Platform version 49	org.gnome.Platform
 GNOME Application Platform version 50	org.gnome.Platform
 i386	org.freedesktop.Platform.codecs_extra.i386
 i386	org.freedesktop.Platform.Compat.i386
