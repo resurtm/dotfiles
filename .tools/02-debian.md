@@ -378,3 +378,13 @@ users
 video
 ```
 
+# GNOME Extensions
+
+```
+appindicatorsupport@rgcjonas.gmail.com
+CoverflowAltTab@palatis.blogspot.com
+dash-to-panel@jderose9.github.com
+display-brightness-ddcutil@themightydeity.github.com
+emoji-copy@felipeftn
+```
+

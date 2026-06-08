@@ -189,6 +189,17 @@ fi
 
 report_groups "$file"
 
+report_gnome_extensions() {
+  if ! command -v gnome-extensions &>/dev/null; then
+    return 0
+  fi
+  printf '# GNOME Extensions\n\n' >>"$1"
+  printf '```\n' >>"$1"
+  gnome-extensions list | sort >>"$1"
+  printf '```\n\n' >>"$1"
+}
+report_gnome_extensions "$file"
+
 section '⚠️ Fastfetch'
 fastfetch
 section '✅ All Done'
