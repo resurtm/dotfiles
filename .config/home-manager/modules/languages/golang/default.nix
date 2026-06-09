@@ -6,7 +6,7 @@ let
 in
 {
   programs.go = {
-    enable = true;
+    enable = false;
     package = pkgs-unstable.go;
   };
 
