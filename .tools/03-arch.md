@@ -2,8 +2,8 @@
 
 ## Stats
 
-* Total applications: 6
-* Total items: 18
+* Total applications: 7
+* Total items: 19
 
 ## Applications
 
@@ -14,6 +14,7 @@ Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Joplin	net.cozic.joplin_desktop
 Steam	com.valvesoftware.Steam
+Telegram	org.telegram.desktop
 ```
 
 ## Items
@@ -37,6 +38,7 @@ Mesa (Extra)	org.freedesktop.Platform.GL.default
 Mesa	org.freedesktop.Platform.GL32.default
 Mesa	org.freedesktop.Platform.GL.default
 Steam	com.valvesoftware.Steam
+Telegram	org.telegram.desktop
 ```
 
 # `pacman`
