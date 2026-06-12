@@ -185,7 +185,7 @@ elif [ "$hostname" == mini-box ]; then
 
 	printf '## List\n\n' >>"$file"
 	printf '```\n' >>"$file"
-	pacman -Qe | sort >>"$file"
+	pacman -Qe | awk '{print $1}' | sort >>"$file"
 	printf '```\n\n' >>"$file"
 
 	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
