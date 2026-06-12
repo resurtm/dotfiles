@@ -43,7 +43,7 @@ Steam	com.valvesoftware.Steam
 
 ## Stats
 
-* Total items: 58
+* Total items: 74
 
 ## List
 
@@ -54,6 +54,7 @@ amd-ucode
 ark
 base
 base-devel
+bind
 cups
 cups-browsed
 dolphin
@@ -61,19 +62,26 @@ ed
 efibootmgr
 ffmpegthumbs
 filezilla
+firewall-applet
+firewall-config
+firewalld
 flatpak
 fwupd
 gimp
 git
 go
 gwenview
+hddtemp
 htop
 imagemagick
 inetutils
+inxi
 jq
 kate
+kcalc
 kdegraphics-thumbnailers
 keepassxc
+kio-admin
 kscreen
 lact
 less
@@ -95,10 +103,18 @@ sudo
 system-config-printer
 terminus-font
 tmux
+tree
+ttf-bitstream-vera
 ttf-jetbrains-mono-nerd
-ufw
+ttf-liberation
+ttf-opensans
 unrar
 unzip
+usbutils
+vlc
+vlc-plugins-all
+vlc-plugins-extra
+wget
 wireguard-tools
 wl-clipboard
 wpa_supplicant
@@ -115,6 +131,7 @@ bluetooth.service
 cups-browsed.service
 cups.service
 cups.socket
+firewalld.service
 getty@.service
 lactd.service
 NetworkManager-dispatcher.service
@@ -137,7 +154,6 @@ systemd-timesyncd.service
 systemd-userdbd.service
 systemd-userdbd.socket
 talk.service
-ufw.service
 uuidd.service
 wg-quick@.service
 ```
