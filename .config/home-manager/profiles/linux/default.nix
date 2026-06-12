@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [ ../common ];
-  home.username = "resurtm";
-  home.homeDirectory = "/home/resurtm";
+  home.username = "x";
+  home.homeDirectory = "/home/x";
 }
