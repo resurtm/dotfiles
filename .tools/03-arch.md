@@ -45,7 +45,7 @@ Telegram	org.telegram.desktop
 
 ## Stats
 
-* Total items: 74
+* Total items: 73
 
 ## List
 
@@ -60,7 +60,6 @@ bind
 cups
 cups-browsed
 dolphin
-ed
 efibootmgr
 ffmpegthumbs
 filezilla
@@ -84,7 +83,6 @@ kcalc
 kdegraphics-thumbnailers
 keepassxc
 kio-admin
-kscreen
 lact
 less
 linux
@@ -98,6 +96,7 @@ openssh
 pacman-contrib
 plasma-meta
 power-profiles-daemon
+rtkit
 skanpage
 smplayer
 starship
@@ -143,6 +142,7 @@ nix-daemon.service
 pcscd.service
 plasmalogin.service
 power-profiles-daemon.service
+rtkit-daemon.service
 saned@.service
 saned.socket
 sshd@.service

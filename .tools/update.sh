@@ -73,7 +73,7 @@ elif [ "$hostname" == mini-box ]; then
 	sudo pacman -Syu
 	if [ "$clean" = true ]; then
 		section '🏗️ Pacman -- Cleanup'
-		sudo pacman -Rns $(pacman -Qdtq)
+		orphans=$(pacman -Qdtq) && [[ -n "$orphans" ]] && sudo pacman -Rns $orphans
 		sudo paccache -rk2
 	fi
 elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
