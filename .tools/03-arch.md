@@ -45,8 +45,8 @@ Telegram	org.telegram.desktop
 
 ## Stats
 
-* Total items (manual): 73
-* Total items (all): 1042
+* Total items (manual): 74
+* Total items (all): 1050
 
 ## List (manual)
 
@@ -84,6 +84,7 @@ kcalc
 kdegraphics-thumbnailers
 keepassxc
 kio-admin
+krita
 lact
 less
 linux
@@ -318,6 +319,7 @@ grep
 groff
 gsettings-desktop-schemas
 gsettings-system-schemas
+gsl
 gsm
 gssdp
 gst-plugins-bad-libs
@@ -433,6 +435,7 @@ kquickcharts
 kquickimageeditor
 krb5
 krdp
+krita
 krunner
 ksanecore
 kscreen
@@ -769,8 +772,10 @@ mesa
 mesa-utils
 milou
 minizip
+minizip-ng
 mkinitcpio
 mkinitcpio-busybox
+mlt
 mobile-broadband-provider-info
 modemmanager
 modemmanager-qt
@@ -804,6 +809,7 @@ okular
 onetbb
 oniguruma
 openal
+opencolorio
 opencore-amr
 opencv
 openexr
@@ -887,6 +893,7 @@ psmisc
 pulseaudio-qt
 pulse-native-provider
 purpose
+pystring
 python
 python-cairo
 python-capng
@@ -934,6 +941,7 @@ qt6-webengine
 qt6-websockets
 qt6-webview
 qtkeychain-qt6
+quazip-qt6
 rav1e
 re2
 readline
@@ -1159,6 +1167,7 @@ xsettingsd
 xvidcore
 xxhash
 xz
+yaml-cpp
 zeromq
 zimg
 zint
