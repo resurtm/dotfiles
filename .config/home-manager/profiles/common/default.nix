@@ -10,4 +10,5 @@
     ../../modules/tui
   ];
   home.stateVersion = "25.11";
+  news.display = "silent";
 }
