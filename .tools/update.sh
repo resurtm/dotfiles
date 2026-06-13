@@ -181,13 +181,18 @@ elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	printf '## Stats\n\n' >>"$file"
 	printf '* Total items (manual): ' >>"$file"
 	pacman -Qe | wc -l >>"$file"
-	printf '* Total items (dependencies): ' >>"$file"
+	printf '* Total items (all): ' >>"$file"
 	pacman -Q | wc -l >>"$file"
 	printf '\n' >>"$file"
 
-	printf '## List\n\n' >>"$file"
+	printf '## List (manual)\n\n' >>"$file"
 	printf '```\n' >>"$file"
 	pacman -Qe | awk '{print $1}' | sort >>"$file"
+	printf '```\n\n' >>"$file"
+
+	printf '## List (all)\n\n' >>"$file"
+	printf '```\n' >>"$file"
+	pacman -Q | awk '{print $1}' | sort >>"$file"
 	printf '```\n\n' >>"$file"
 
 	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
