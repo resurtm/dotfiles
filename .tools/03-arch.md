@@ -45,7 +45,8 @@ Telegram	org.telegram.desktop
 
 ## Stats
 
-* Total items: 73
+* Total items (manual): 73
+* Total items (dependencies): 1043
 
 ## List
 

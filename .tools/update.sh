@@ -59,7 +59,7 @@ if [ "$clean" = true ]; then
 	flatpak --user remove --unused
 fi
 
-if [ "$hostname" == big-box ]; then
+if [ "$hostname" == void ]; then
 	section '🌀 XBPS'
 	sudo xbps-install -Su
 	if [ "$clean" = true ]; then
@@ -68,7 +68,7 @@ if [ "$hostname" == big-box ]; then
 		sudo xbps-remove -O
 		sudo vkpurge rm all
 	fi
-elif [ "$hostname" == mini-box ]; then
+elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	section '🏗️ Pacman'
 	sudo pacman -Syu
 	if [ "$clean" = true ]; then
@@ -139,11 +139,11 @@ report_groups() {
 }
 
 dir="${HOME}/.tools"
-if [ "$hostname" == big-box ]; then
+if [ "$hostname" == void ]; then
 	file="${dir}/01-void.md"
 elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
 	file="${dir}/02-debian.md"
-elif [ "$hostname" == mini-box ]; then
+elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	file="${dir}/03-arch.md"
 else
 	printf 'report -- hostname is not supported\n'
@@ -153,7 +153,7 @@ fi
 rm -f -- "$file"
 report_flatpak "$file"
 
-if [ "$hostname" == big-box ]; then
+if [ "$hostname" == void ]; then
 	printf '# XBPS\n\n' >>"$file"
 
 	printf '## Stats\n\n' >>"$file"
@@ -175,12 +175,14 @@ if [ "$hostname" == big-box ]; then
 	printf '```\n' >>"$file"
 	ls /var/service/ | sort >>"$file"
 	printf '```\n\n' >>"$file"
-elif [ "$hostname" == mini-box ]; then
+elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	printf '# `pacman`\n\n' >>"$file"
 
 	printf '## Stats\n\n' >>"$file"
-	printf '* Total items: ' >>"$file"
+	printf '* Total items (manual): ' >>"$file"
 	pacman -Qe | wc -l >>"$file"
+	printf '* Total items (dependencies): ' >>"$file"
+	pacman -Q | wc -l >>"$file"
 	printf '\n' >>"$file"
 
 	printf '## List\n\n' >>"$file"
