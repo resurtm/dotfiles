@@ -46,7 +46,7 @@ Telegram	org.telegram.desktop
 ## Stats
 
 * Total items (manual): 73
-* Total items (all): 1043
+* Total items (all): 1042
 
 ## List (manual)
 
@@ -1159,7 +1159,6 @@ xsettingsd
 xvidcore
 xxhash
 xz
-yyjson
 zeromq
 zimg
 zint
