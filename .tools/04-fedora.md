@@ -2,13 +2,14 @@
 
 ## Stats
 
-* Total applications: 1
-* Total items: 5
+* Total applications: 2
+* Total items: 7
 
 ## Applications
 
 ```
 Firefox	org.mozilla.firefox
+Flatseal	com.github.tchx84.Flatseal
 ```
 
 ## Items
@@ -16,7 +17,9 @@ Firefox	org.mozilla.firefox
 ```
 Codecs Extra Extension	org.freedesktop.Platform.codecs-extra
 Firefox	org.mozilla.firefox
+Flatseal	com.github.tchx84.Flatseal
 Freedesktop Platform	org.freedesktop.Platform
+GNOME Application Platform version 50	org.gnome.Platform
 Mesa (Extra)	org.freedesktop.Platform.GL.default
 Mesa	org.freedesktop.Platform.GL.default
 ```
@@ -25,14 +28,13 @@ Mesa	org.freedesktop.Platform.GL.default
 
 ## Stats
 
-* Total items (manual): 367
-* Total items (all): 1931
+* Total items (manual): 355
+* Total items (all): 1732
 
 ## List (manual)
 
 ```
 aajohan-comfortaa-fonts
-abrt-cli
 acl
 adobe-source-code-pro-fonts
 alacritty
@@ -135,7 +137,6 @@ glib-networking
 glycin-thumbnailer
 gnome-backgrounds
 gnome-bluetooth
-gnome-boxes
 gnome-browser-connector
 gnome-calculator
 gnome-calendar
@@ -209,10 +210,6 @@ ibus-hangul
 ibus-libpinyin
 ibus-m17n
 ibus-typing-booster
-intel-audio-firmware
-intel-gpu-firmware
-intel-lpmd
-intel-vsc-firmware
 iproute
 iptables-nft
 iptstate
@@ -235,7 +232,6 @@ libertas-firmware
 libglvnd-gles
 librsvg2
 libsane-hpaio
-libva-intel-media-driver
 linux-firmware
 livesys-scripts
 localsearch
@@ -319,7 +315,6 @@ psacct
 psmisc
 ptyxis
 qcom-wwan-firmware
-qemu-guest-agent
 qt6-qtbase
 qt6-qtbase-gui
 qt6-qtdeclarative
@@ -347,9 +342,6 @@ sos
 speech-dispatcher
 spice-vdagent
 spice-webdavd
-sssd-common
-sssd-kcm
-sssd-proxy
 subversion
 sudo
 sushi
@@ -377,7 +369,6 @@ usb_modeswitch
 usbutils
 util-linux
 vim-minimal
-virtualbox-guest-additions
 vte-profile
 wget2-wget
 which
@@ -404,17 +395,6 @@ aajohan-comfortaa-fonts
 aardvark-dns
 abattis-cantarell-fonts
 abattis-cantarell-vf-fonts
-abrt
-abrt-addon-ccpp
-abrt-addon-kerneloops
-abrt-addon-pstoreoops
-abrt-addon-vmcore
-abrt-addon-xorg
-abrt-cli
-abrt-dbus
-abrt-libs
-abrt-plugin-bodhi
-abrt-tui
 abseil-cpp
 accountsservice
 accountsservice-libs
@@ -507,8 +487,6 @@ ca-certificates
 cairo
 cairo-gobject
 cairomm1.16
-capstone
-c-ares
 catatonit
 cdparanoia-libs
 checkpolicy
@@ -562,7 +540,6 @@ cups-libs
 cups-pk-helper
 curl
 cxl-libs
-cyrus-sasl-gssapi
 cyrus-sasl-lib
 cyrus-sasl-plain
 daxctl-libs
@@ -654,13 +631,11 @@ device-mapper
 device-mapper-event
 device-mapper-event-libs
 device-mapper-libs
-device-mapper-multipath-libs
 device-mapper-persistent-data
 diffstat
 diffutils
 distribution-gpg-keys
 djvulibre-libs
-dmidecode
 dnf5
 dnf5daemon-server
 dnf5daemon-server-polkit
@@ -684,12 +659,9 @@ e2fsprogs
 e2fsprogs-libs
 ed
 editorconfig-libs
-edk2-ovmf
-edk2-shell-x64
 efibootmgr
 efi-filesystem
 efivar-libs
-elfutils
 elfutils-debuginfod-client
 elfutils-default-yama-scope
 elfutils-devel
@@ -784,7 +756,6 @@ gdbm-libs
 gdk-pixbuf2
 gdm
 gdouros-symbola-fonts
-genisoimage
 geoclue2
 geoclue2-libs
 geocode-glib
@@ -808,10 +779,6 @@ glibc-devel
 glibc-gconv-extra
 glibmm2.68
 glib-networking
-glusterfs
-glusterfs-cli
-glusterfs-client-xlators
-glusterfs-fuse
 glx-utils
 glycin-gtk4-libs
 glycin-libs
@@ -823,7 +790,6 @@ gnome-autoar
 gnome-backgrounds
 gnome-bluetooth
 gnome-bluetooth-libs
-gnome-boxes
 gnome-browser-connector
 gnome-calculator
 gnome-calendar
@@ -879,7 +845,6 @@ gnupg2-keyboxd
 gnupg2-verify
 gnutls
 gnutls-dane
-gnutls-utils
 gobject-introspection
 go-filesystem
 golang
@@ -941,7 +906,6 @@ google-noto-serif-tamil-vf-fonts
 google-noto-serif-telugu-vf-fonts
 google-noto-serif-thai-vf-fonts
 google-noto-serif-vf-fonts
-gperftools-libs
 gpgme
 gpgmepp
 graphene
@@ -1015,7 +979,6 @@ gweather-locations-common
 gzip
 harfbuzz
 harfbuzz-icu
-hdparm
 hfsplus-tools
 hicolor-icon-theme
 hidapi
@@ -1058,7 +1021,6 @@ ibus-libs
 ibus-m17n
 ibus-setup
 ibus-typing-booster
-igvm-libs
 iio-sensor-proxy
 ilbc
 ima-evm-utils-libs
@@ -1069,23 +1031,14 @@ inih
 inih-cpp
 iniparser
 initscripts-service
-intel-audio-firmware
-intel-gmmlib
-intel-gpu-firmware
-intel-lpmd
-intel-mediasdk
-intel-vpl-gpu-rt
-intel-vsc-firmware
 ipp-usb
 iproute
-iproute-tc
 ipset
 ipset-libs
 iptables-libs
 iptables-nft
 iptstate
 iputils
-ipxe-roms-qemu
 irqbalance
 iscsi-initiator-utils
 iscsi-initiator-utils-iscsiuio
@@ -1120,8 +1073,6 @@ kernel-headers
 kernel-modules
 kernel-modules-core
 kernel-modules-extra
-kernel-tools
-kernel-tools-libs
 kexec-tools
 keyutils
 keyutils-libs
@@ -1163,7 +1114,6 @@ libb2
 libbabeltrace
 libbasicobjects
 libblkid
-libblkio
 libblockdev
 libblockdev-btrfs
 libblockdev-crypto
@@ -1215,7 +1165,6 @@ libdatrie
 libdav1d
 libdecor
 libdeflate
-libdhash
 libdisplay-info
 libdnf
 libdnf5
@@ -1241,7 +1190,6 @@ libevent
 libexif
 libfastjson
 libfdisk
-libfdt
 libffi
 libfido2
 libfontenc
@@ -1252,11 +1200,7 @@ libgcc
 libgcrypt
 libgee
 libgexiv2
-libgfapi0
-libgfrpc0
-libgfxdr0
 libgit2
-libglusterfs0
 libglvnd
 libglvnd-egl
 libglvnd-gles
@@ -1290,7 +1234,6 @@ libimobiledevice-glue
 libini_config
 libinput
 libipt
-libiscsi
 libjpeg-turbo
 libjxl
 libkcapi
@@ -1322,12 +1265,10 @@ libmpeg2
 libmspack
 libmtp
 libmysofa
-libnbd
 libndp
 libnet
 libnetfilter_conntrack
 libnfnetlink
-libnfs
 libnfsidmap
 libnftnl
 libnghttp2
@@ -1351,7 +1292,6 @@ libpasswdqc
 libpath_utils
 libpcap
 libpciaccess
-libpfm
 libphodav
 libphonenumber
 libpinyin
@@ -1360,11 +1300,8 @@ libpipeline
 libpkgconf
 libplacebo
 libplist
-libpmem
-libpmemobj
 libpng
 libportal
-libportal-gtk3
 libportal-gtk4
 libppd
 libproxy
@@ -1375,24 +1312,16 @@ libqmi
 libqmi-utils
 libqrtr-glib
 librabbitmq
-librados2
 libraqm
 LibRaw
-librbd1
-librdmacm
 libref_array
 librepo
 libreport
 libreport-anaconda
 libreport-cli
-libreport-fedora
 libreport-filesystem
 libreport-plugin-bugzilla
-libreport-plugin-kerneloops
-libreport-plugin-logger
 libreport-plugin-reportuploader
-libreport-plugin-systemd-journal
-libreport-plugin-ureport
 libreport-web
 librist
 librsvg2
@@ -1411,7 +1340,6 @@ libshaderc
 libshout
 libshumate
 libsigc++30
-libslirp
 libSM
 libsmartcols
 libsmbclient
@@ -1426,10 +1354,6 @@ libss
 libssh
 libssh2
 libssh-config
-libsss_certmap
-libsss_idmap
-libsss_nss_idmap
-libsss_sudo
 libstdc++
 libstemmer
 libswresample-free
@@ -1447,8 +1371,6 @@ libtinysparql
 libtirpc
 libtommath
 libtool-ltdl
-libtpms
-libtraceevent
 libudfread
 libudisks2
 libultrahdr
@@ -1456,7 +1378,6 @@ libunibreak
 libunistring
 libunwind
 liburing
-libusal
 libusb1
 libusbmuxd
 libuser
@@ -1465,40 +1386,9 @@ libuuid
 libuv
 libv4l
 libva
-libva-intel-media-driver
 libvdpau
 libverto
 libverto-libev
-libvirt-client
-libvirt-daemon
-libvirt-daemon-common
-libvirt-daemon-config-network
-libvirt-daemon-driver-interface
-libvirt-daemon-driver-network
-libvirt-daemon-driver-nodedev
-libvirt-daemon-driver-nwfilter
-libvirt-daemon-driver-qemu
-libvirt-daemon-driver-secret
-libvirt-daemon-driver-storage
-libvirt-daemon-driver-storage-core
-libvirt-daemon-driver-storage-disk
-libvirt-daemon-driver-storage-gluster
-libvirt-daemon-driver-storage-iscsi
-libvirt-daemon-driver-storage-iscsi-direct
-libvirt-daemon-driver-storage-logical
-libvirt-daemon-driver-storage-mpath
-libvirt-daemon-driver-storage-rbd
-libvirt-daemon-driver-storage-scsi
-libvirt-daemon-kvm
-libvirt-daemon-lock
-libvirt-daemon-log
-libvirt-daemon-plugin-lockd
-libvirt-daemon-proxy
-libvirt-gconfig
-libvirt-glib
-libvirt-gobject
-libvirt-libs
-libvirt-ssh-proxy
 libvisual
 libvmaf
 libvncserver
@@ -1516,7 +1406,6 @@ libwebp
 libwinpr
 libwmf-lite
 libwnck3
-libwsman1
 libX11
 libX11-common
 libX11-xcb
@@ -1529,7 +1418,6 @@ libXcursor
 libxcvt
 libXdamage
 libXdmcp
-libxdp
 libXext
 libXfixes
 libXfont2
@@ -1583,7 +1471,6 @@ lvm2-dbusd
 lvm2-libs
 lz4-libs
 lzo
-lzop
 m17n-db
 m17n-lib
 mactel-boot
@@ -1598,7 +1485,6 @@ man-db
 man-pages
 mcelog
 mdadm
-mdevctl
 mediawriter
 memstrack
 mesa-dri-drivers
@@ -1633,13 +1519,6 @@ nano
 nano-default-editor
 nautilus
 nautilus-extensions
-nbdkit
-nbdkit-basic-filters
-nbdkit-basic-plugins
-nbdkit-curl-plugin
-nbdkit-selinux
-nbdkit-server
-nbdkit-ssh-plugin
 ncurses
 ncurses-base
 ncurses-libs
@@ -1701,7 +1580,6 @@ ntfs-3g-libs
 ntfs-3g-system-compression
 ntfsprogs
 numactl-libs
-numad
 nvme-cli
 nxpwireless-firmware
 oniguruma
@@ -1889,12 +1767,9 @@ publicsuffix-list-dafsa
 pulseaudio-libs
 pulseaudio-libs-glib2
 python3
-python3-abrt
-python3-abrt-addon
 python3-anyio
 python3-argcomplete
 python3-audit
-python3-augeas
 python3-blivet
 python3-blockdev
 python3-brlapi
@@ -1924,7 +1799,6 @@ python3-httpcore
 python3-httpx
 python3-ibus
 python3-idna
-python3-inotify
 python3-iso639
 python3-kickstart
 python3-langtable
@@ -1936,14 +1810,12 @@ python3-libreport
 python3-libs
 python3-libselinux
 python3-libsemanage
-python3-linux-procfs
 python3-louis
 python3-meh
 python3-nftables
 python3-olefile
 python3-packaging
 python3-pam
-python3-perf
 python3-pexpect
 python3-pid
 python3-pillow
@@ -1978,59 +1850,7 @@ python3-urllib3+socks
 python3-xkbregistry
 python-pip-wheel
 python-unversioned-command
-qatlib
-qatlib-service
-qatzip-libs
 qcom-wwan-firmware
-qemu-audio-alsa
-qemu-audio-dbus
-qemu-audio-jack
-qemu-audio-oss
-qemu-audio-pa
-qemu-audio-pipewire
-qemu-audio-sdl
-qemu-audio-spice
-qemu-block-blkio
-qemu-block-curl
-qemu-block-dmg
-qemu-block-gluster
-qemu-block-iscsi
-qemu-block-nfs
-qemu-block-rbd
-qemu-block-ssh
-qemu-char-baum
-qemu-char-spice
-qemu-common
-qemu-device-display-qxl
-qemu-device-display-vhost-user-gpu
-qemu-device-display-virtio-gpu
-qemu-device-display-virtio-gpu-ccw
-qemu-device-display-virtio-gpu-gl
-qemu-device-display-virtio-gpu-pci
-qemu-device-display-virtio-gpu-pci-gl
-qemu-device-display-virtio-gpu-pci-rutabaga
-qemu-device-display-virtio-gpu-rutabaga
-qemu-device-display-virtio-vga
-qemu-device-display-virtio-vga-gl
-qemu-device-display-virtio-vga-rutabaga
-qemu-device-uefi-vars
-qemu-device-usb-host
-qemu-device-usb-redirect
-qemu-device-usb-smartcard
-qemu-guest-agent
-qemu-img
-qemu-kvm
-qemu-kvm-core
-qemu-pr-helper
-qemu-system-x86
-qemu-system-x86-core
-qemu-ui-curses
-qemu-ui-egl-headless
-qemu-ui-gtk
-qemu-ui-opengl
-qemu-ui-sdl
-qemu-ui-spice-app
-qemu-ui-spice-core
 qpdf-libs
 qrencode-libs
 qt6-filesystem
@@ -2068,7 +1888,6 @@ rsync
 rsyslog
 rtkit
 rubberband-libs
-rutabaga-gfx-ffi
 rygel
 samba-client
 samba-client-libs
@@ -2081,13 +1900,9 @@ sane-backends-drivers-cameras
 sane-backends-drivers-scanners
 sane-backends-libs
 satyr
-scrub
 sdbus-cpp
 sdl2-compat
-SDL2_image
 SDL3
-seabios-bin
-seavgabios-bin
 sed
 selinux-policy
 selinux-policy-targeted
@@ -2104,7 +1919,6 @@ sil-padauk-fonts
 simdutf
 simple-scan
 skopeo
-slang
 smartmontools
 smartmontools-selinux
 snappy
@@ -2123,7 +1937,6 @@ speech-dispatcher-libs
 speex
 spice-glib
 spice-gtk3
-spice-server
 spice-vdagent
 spice-webdavd
 spirv-tools-libs
@@ -2132,12 +1945,6 @@ sratom
 srt-libs
 sshpass
 sso-mib-libs
-sssd-client
-sssd-common
-sssd-kcm
-sssd-krb5-common
-sssd-nfs-idmap
-sssd-proxy
 startup-notification
 stix-fonts
 stoken-libs
@@ -2148,15 +1955,10 @@ sudo-python-plugin
 sushi
 svt-av1-libs
 switcheroo-control
-swtpm
-swtpm-libs
-swtpm-selinux
-swtpm-tools
 symlinks
 system-config-printer-libs
 system-config-printer-udev
 systemd
-systemd-container
 systemd-libs
 systemd-networkd
 systemd-oomd-defaults
@@ -2182,7 +1984,6 @@ tesseract-libs
 tesseract-tessdata-doc
 texlive-lib
 thermald
-thrift
 time
 tinysparql
 tiwilink-firmware
@@ -2195,8 +1996,6 @@ tpm2-tss-fapi
 traceroute
 tree
 tslib
-tuned
-tuned-ppd
 twolame-libs
 tzdata
 uchardet
@@ -2238,10 +2037,6 @@ vazirmatn-vf-fonts
 vid.stab
 vim-data
 vim-minimal
-virglrenderer
-virtiofsd
-virtualbox-guest-additions
-virt-what
 vo-amrwbenc
 volume_key-libs
 vpnc
@@ -2283,8 +2078,6 @@ xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
 xdriinfo
-xen-libs
-xen-licenses
 xevd-libs
 xeve-libs
 xfsprogs
@@ -2317,7 +2110,6 @@ zeromq
 zimg
 zip
 zix
-zlib-ng
 zlib-ng-compat
 zlib-ng-compat-devel
 zram-generator
@@ -2330,11 +2122,6 @@ zvbi
 ## Services & Sockets (`systemd`)
 
 ```
-abrtd.service
-abrt-journal-core.service
-abrt-oops.service
-abrt-vmcore.service
-abrt-xorg.service
 accounts-daemon.service
 atd.service
 auditd.service
@@ -2354,7 +2141,6 @@ firewalld.service
 flatpak-add-fedora-repos.service
 gdm.service
 getty@.service
-intel_lpmd.service
 irqbalance.service
 iscsid.socket
 iscsi-onboot.service
@@ -2374,31 +2160,19 @@ NetworkManager-wait-online.service
 nix-daemon.service
 pcscd.service
 pcscd.socket
-qemu-guest-agent.service
 rpmdb-rebuild.service
 rsyslog.service
 rtkit-daemon.service
 selinux-autorelabel-mark.service
 smartd.service
 sshd@.service
-sssd-autofs.service
-sssd-kcm.service
-sssd-kcm.socket
-sssd-nss.service
-sssd-pac.service
-sssd-pam.service
-sssd.service
-sssd-ssh.service
-sssd-sudo.service
 switcheroo-control.service
 systemd-boot-clear-sysfail.service
 systemd-confext.service
 systemd-homed-activate.service
 systemd-homed.service
 systemd-journald-audit.socket
-systemd-mountfsd.service
 systemd-network-generator.service
-systemd-nsresourced.service
 systemd-oomd.service
 systemd-oomd.socket
 systemd-pstore.service
@@ -2412,42 +2186,10 @@ systemd-tpm2-clear.service
 systemd-userdbd.service
 systemd-userdbd.socket
 thermald.service
-tuned-ppd.service
-tuned.service
 udisks2.service
 upower.service
 uresourced.service
-vboxservice.service
 vgauthd.service
-virtinterfaced-admin.socket
-virtinterfaced-ro.socket
-virtinterfaced.socket
-virtlockd-admin.socket
-virtlockd.socket
-virtlogd-admin.socket
-virtlogd.socket
-virtnetworkd-admin.socket
-virtnetworkd-ro.socket
-virtnetworkd.socket
-virtnodedevd-admin.socket
-virtnodedevd-ro.socket
-virtnodedevd.socket
-virtnwfilterd-admin.socket
-virtnwfilterd-ro.socket
-virtnwfilterd.socket
-virtproxyd-admin.socket
-virtproxyd-ro.socket
-virtproxyd.socket
-virtqemud-admin.socket
-virtqemud-ro.socket
-virtqemud.service
-virtqemud.socket
-virtsecretd-admin.socket
-virtsecretd-ro.socket
-virtsecretd.socket
-virtstoraged-admin.socket
-virtstoraged-ro.socket
-virtstoraged.socket
 vmtoolsd.service
 ```
 
