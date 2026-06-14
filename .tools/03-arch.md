@@ -45,8 +45,8 @@ Telegram	org.telegram.desktop
 
 ## Stats
 
-* Total items (manual): 74
-* Total items (all): 1050
+* Total items (manual): 73
+* Total items (all): 1049
 
 ## List (manual)
 
@@ -101,7 +101,6 @@ power-profiles-daemon
 rtkit
 skanpage
 smplayer
-starship
 sudo
 system-config-printer
 terminus-font
@@ -987,7 +986,6 @@ spirv-tools
 sqlite
 sratom
 srt
-starship
 sudo
 suitesparse
 svt-av1
