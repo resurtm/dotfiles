@@ -2,8 +2,8 @@
 
 ## Stats
 
-* Total applications: 7
-* Total items: 19
+* Total applications: 8
+* Total items: 20
 
 ## Applications
 
@@ -13,6 +13,7 @@ Dropbox	com.dropbox.Client
 Firefox	org.mozilla.firefox
 Flatseal	com.github.tchx84.Flatseal
 Joplin	net.cozic.joplin_desktop
+Mullvad Browser	net.mullvad.MullvadBrowser
 Steam	com.valvesoftware.Steam
 Telegram	org.telegram.desktop
 ```
@@ -37,6 +38,7 @@ Mesa (Extra)	org.freedesktop.Platform.GL32.default
 Mesa (Extra)	org.freedesktop.Platform.GL.default
 Mesa	org.freedesktop.Platform.GL32.default
 Mesa	org.freedesktop.Platform.GL.default
+Mullvad Browser	net.mullvad.MullvadBrowser
 Steam	com.valvesoftware.Steam
 Telegram	org.telegram.desktop
 ```
@@ -46,7 +48,7 @@ Telegram	org.telegram.desktop
 ## Stats
 
 * Total items (manual): 73
-* Total items (all): 1049
+* Total items (all): 1051
 
 ## List (manual)
 
@@ -331,6 +333,7 @@ gtk4
 gtksourceview4
 gtk-update-icon-cache
 guile
+gumbo-parser
 gupnp
 gupnp-igd
 gwenview
@@ -746,6 +749,7 @@ linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
 lirc
+litehtml0.9
 live-media
 llhttp
 llvm-libs
