@@ -28,8 +28,8 @@ Mesa	org.freedesktop.Platform.GL.default
 
 ## Stats
 
-* Total items (manual): 348
-* Total items (all): 1626
+* Total items (manual): 342
+* Total items (all): 1614
 
 ## List (manual)
 
@@ -61,7 +61,6 @@ bc
 bind-utils
 bluez-cups
 brcmfmac-firmware
-brltty
 btrfs-progs
 bzip2
 chrony
@@ -199,7 +198,6 @@ hostname
 hplip
 htop
 hunspell
-hyperv-daemons
 ibus-anthy
 ibus-chewing
 ibus-gtk3
@@ -279,7 +277,6 @@ orca
 PackageKit-command-not-found
 PackageKit-gstreamer-plugin
 PackageKit-gtk3-module
-pam_afs_session
 papers
 papers-nautilus
 paps
@@ -313,7 +310,6 @@ qt6-qtbase-gui
 qt6-qtdeclarative
 qt6-qtwayland-adwaita-decoration
 quota
-realmd
 realtek-firmware
 rootfiles
 rpm
@@ -333,8 +329,6 @@ smartmontools
 snapshot
 sos
 speech-dispatcher
-spice-vdagent
-spice-webdavd
 subversion
 sudo
 sushi
@@ -431,7 +425,6 @@ authselect
 authselect-libs
 avahi
 avahi-glib
-avahi-gobject
 avahi-libs
 avahi-tools
 b43-fwcutter
@@ -465,7 +458,6 @@ boost-url
 braille-printer-app
 brcmfmac-firmware
 brlapi
-brltty
 btrfs-progs
 bubblewrap
 busybox
@@ -977,11 +969,6 @@ hunspell-en-US
 hunspell-filesystem
 hwdata
 hwloc-libs
-hyperv-daemons
-hyperv-daemons-license
-hypervfcopyd
-hypervkvpd
-hypervvssd
 hyphen
 i2c-tools
 ibus
@@ -1555,7 +1542,6 @@ PackageKit-gstreamer-plugin
 PackageKit-gtk3-module
 paktype-naskh-basic-fonts
 pam
-pam_afs_session
 pam-libs
 pam_passwdqc
 pango
@@ -1581,7 +1567,6 @@ pciutils-libs
 pcre2
 pcre2-syntax
 pcre2-utf16
-pcre2-utf32
 perl-AutoLoader
 perl-B
 perl-base
@@ -1767,7 +1752,6 @@ quota-nls
 rav1e-libs
 rdma-core-common
 readline
-realmd
 realtek-firmware
 redhat-menus
 rest
@@ -1832,8 +1816,6 @@ speech-dispatcher
 speech-dispatcher-espeak-ng
 speech-dispatcher-libs
 speex
-spice-vdagent
-spice-webdavd
 spirv-tools-libs
 sqlite-libs
 sratom
