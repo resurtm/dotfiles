@@ -45,6 +45,9 @@ if [ "$clean" = true ]; then
 	nix-collect-garbage
 fi
 
+# comes from the default Home Manager installation, must be removed
+[ -f ~/.config/home-manager/home.nix ] && rm ~/.config/home-manager/home.nix
+
 section '🔧 Flatpak'
 if [ "$(flatpak --system config --get languages 2>/dev/null)" != "en;de" ]; then
 	flatpak --system config --set languages "en;de"
@@ -70,13 +73,13 @@ if [ "$hostname" == void ]; then
 	fi
 elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	section '🏗️ Pacman'
-	sudo pacman -Syu
+	sudo pacman -Syyu
 	if [ "$clean" = true ]; then
 		section '🏗️ Pacman -- Cleanup'
 		orphans=$(pacman -Qdtq) && [[ -n "$orphans" ]] && sudo pacman -Rns $orphans
 		sudo paccache -rk2
 	fi
-elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
+elif [ "$hostname" == thinkpad-x260 ]; then
 	section '🔮 APT'
 	sudo apt update
 	sudo apt dist-upgrade
@@ -88,8 +91,16 @@ elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
 		dpkg -l | awk '/^rc/ {print $2}' | xargs -r sudo dpkg --purge
 		sudo rm -rf /var/lib/apt/lists/*
 	fi
+elif [ "$hostname" == thinkpad-t14 ]; then
+	section '🏁 DNF'
+	sudo dnf upgrade --refresh
+	if [ "$clean" = true ]; then
+		section '🧹 DNF -- Cleanup'
+		sudo dnf clean all
+		sudo dnf autoremove -y
+	fi
 else
-	printf 'xbps/apt -- hostname is not supported\n'
+	printf 'xbps/pacman/apt/dnf -- hostname is not supported\n'
 	exit 1
 fi
 
@@ -141,10 +152,12 @@ report_groups() {
 dir="${HOME}/.tools"
 if [ "$hostname" == void ]; then
 	file="${dir}/01-void.md"
-elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
+elif [ "$hostname" == thinkpad-x260 ]; then
 	file="${dir}/02-debian.md"
 elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	file="${dir}/03-arch.md"
+elif [ "$hostname" == thinkpad-t14 ]; then
+	file="${dir}/04-fedora.md"
 else
 	printf 'report -- hostname is not supported\n'
 	exit 1
@@ -154,6 +167,7 @@ rm -f -- "$file"
 report_flatpak "$file"
 
 if [ "$hostname" == void ]; then
+	printf 'report -- XBPS\n'
 	printf '# XBPS\n\n' >>"$file"
 
 	printf '## Stats\n\n' >>"$file"
@@ -176,6 +190,7 @@ if [ "$hostname" == void ]; then
 	ls /var/service/ | sort >>"$file"
 	printf '```\n\n' >>"$file"
 elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
+	printf 'report -- pacman\n'
 	printf '# `pacman`\n\n' >>"$file"
 
 	printf '## Stats\n\n' >>"$file"
@@ -202,7 +217,8 @@ elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
 	} | awk '{print $1}' | sort >>"$file"
 	printf '```\n\n' >>"$file"
-elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
+elif [ "$hostname" == thinkpad-x260 ]; then
+	printf 'report -- dpkg/apt\n'
 	printf '# `dpkg`/`apt`\n\n' >>"$file"
 
 	printf '## Stats\n\n' >>"$file"
@@ -213,6 +229,34 @@ elif [ "$hostname" == thinkpad-t14 ] || [ "$hostname" == thinkpad-x260 ]; then
 	printf '## List\n\n' >>"$file"
 	printf '```\n' >>"$file"
 	apt-mark showmanual | grep -Ev '\-microcode|firmware-' | sort >>"$file"
+	printf '```\n\n' >>"$file"
+
+	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
+	printf '```\n' >>"$file"
+	{
+		systemctl list-unit-files --type=service --state=enabled,indirect --no-legend
+		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
+	} | awk '{print $1}' | sort >>"$file"
+	printf '```\n\n' >>"$file"
+elif [ "$hostname" == thinkpad-t14 ]; then
+	printf 'report -- rpm/dnf\n'
+	printf '# `rpm`/`dnf`\n\n' >>"$file"
+
+	printf '## Stats\n\n' >>"$file"
+	printf '* Total items (manual): ' >>"$file"
+	dnf repoquery --userinstalled | wc -l >>"$file"
+	printf '* Total items (all): ' >>"$file"
+	dnf repoquery --installed | wc -l >>"$file"
+	printf '\n' >>"$file"
+
+	printf '## List (manual)\n\n' >>"$file"
+	printf '```\n' >>"$file"
+	dnf repoquery --userinstalled --queryformat '%{name}\n' | sort >>"$file"
+	printf '```\n\n' >>"$file"
+
+	printf '## List (all)\n\n' >>"$file"
+	printf '```\n' >>"$file"
+	dnf repoquery --installed --queryformat '%{name}\n' | sort >>"$file"
 	printf '```\n\n' >>"$file"
 
 	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
