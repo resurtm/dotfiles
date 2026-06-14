@@ -28,8 +28,8 @@ Mesa	org.freedesktop.Platform.GL.default
 
 ## Stats
 
-* Total items (manual): 355
-* Total items (all): 1732
+* Total items (manual): 348
+* Total items (all): 1626
 
 ## List (manual)
 
@@ -43,7 +43,6 @@ alsa-ucm
 alsa-utils
 amd-gpu-firmware
 amd-ucode-firmware
-anaconda-install-env-deps
 at
 atheros-firmware
 at-spi2-atk
@@ -144,7 +143,6 @@ gnome-characters
 gnome-classic-session
 gnome-clocks
 gnome-color-manager
-gnome-connections
 gnome-contacts
 gnome-control-center
 gnome-disk-utility
@@ -215,7 +213,6 @@ iptables-nft
 iptstate
 iputils
 irqbalance
-iscsi-initiator-utils
 isomd5sum
 iwlegacy-firmware
 iwlwifi-dvm-firmware
@@ -233,7 +230,6 @@ libglvnd-gles
 librsvg2
 libsane-hpaio
 linux-firmware
-livesys-scripts
 localsearch
 logrotate
 loupe
@@ -262,7 +258,6 @@ NetworkManager
 NetworkManager-adsl
 NetworkManager-bluetooth
 NetworkManager-config-connectivity-fedora
-NetworkManager-openconnect-gnome
 NetworkManager-openvpn-gnome
 NetworkManager-ppp
 NetworkManager-ssh-gnome
@@ -278,10 +273,8 @@ ntfs-3g
 ntfsprogs
 nvme-cli
 nxpwireless-firmware
-opensc
 openssh-clients
 openssh-server
-open-vm-tools-desktop
 orca
 PackageKit-command-not-found
 PackageKit-gstreamer-plugin
@@ -416,9 +409,6 @@ alsa-utils
 alternatives
 amd-gpu-firmware
 amd-ucode-firmware
-anaconda-core
-anaconda-install-env-deps
-anaconda-tui
 anthy-unicode
 antiword
 appstream
@@ -437,7 +427,6 @@ attr
 audit
 audit-libs
 audit-rules
-augeas-libs
 authselect
 authselect-libs
 avahi
@@ -457,7 +446,6 @@ bind-libs
 bind-utils
 binutils
 blake3
-blivet-data
 bluez
 bluez-cups
 bluez-libs
@@ -528,7 +516,6 @@ crypto-policies
 crypto-policies-scripts
 cryptsetup
 cryptsetup-libs
-ctags
 cups
 cups-browsed
 cups-client
@@ -539,16 +526,12 @@ cups-ipptool
 cups-libs
 cups-pk-helper
 curl
-cxl-libs
 cyrus-sasl-lib
 cyrus-sasl-plain
-daxctl-libs
 dbus
 dbus-broker
 dbus-common
-dbus-daemon
 dbus-libs
-dbus-tools
 dconf
 ddcutil
 decibels
@@ -640,8 +623,6 @@ dnf5
 dnf5daemon-server
 dnf5daemon-server-polkit
 dnf5-plugins
-dnf-data
-dnf-plugins-core
 dnsmasq
 dns-root-data
 dos2unix
@@ -749,8 +730,6 @@ gcr3
 gcr3-base
 gcr-libs
 gd
-gdb
-gdb-headless
 gdbm
 gdbm-libs
 gdk-pixbuf2
@@ -797,7 +776,6 @@ gnome-characters
 gnome-classic-session
 gnome-clocks
 gnome-color-manager
-gnome-connections
 gnome-contacts
 gnome-control-center
 gnome-control-center-filesystem
@@ -953,7 +931,6 @@ gtkmm4.0
 gtksourceview4
 gtksourceview5
 gtk-update-icon-cache
-gtk-vnc2
 gts
 gupnp
 gupnp-av
@@ -972,8 +949,6 @@ gvfs-goa
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-gvnc
-gvncpulse
 gweather-locations
 gweather-locations-common
 gzip
@@ -1029,7 +1004,6 @@ ImageMagick-libs
 imath
 inih
 inih-cpp
-iniparser
 initscripts-service
 ipp-usb
 iproute
@@ -1040,9 +1014,6 @@ iptables-nft
 iptstate
 iputils
 irqbalance
-iscsi-initiator-utils
-iscsi-initiator-utils-iscsiuio
-isns-utils-libs
 iso-codes
 isomd5sum
 iw
@@ -1066,7 +1037,6 @@ kbd
 kbd-legacy
 kbd-misc
 kde-filesystem
-kdump-anaconda-addon
 kernel
 kernel-core
 kernel-headers
@@ -1111,27 +1081,18 @@ libavformat-free
 libavif
 libavutil-free
 libb2
-libbabeltrace
 libbasicobjects
 libblkid
 libblockdev
 libblockdev-btrfs
 libblockdev-crypto
-libblockdev-dm
 libblockdev-fs
 libblockdev-loop
-libblockdev-lvm
-libblockdev-lvm-dbus
 libblockdev-mdraid
-libblockdev-mpath
-libblockdev-nvdimm
 libblockdev-nvme
 libblockdev-part
-libblockdev-plugins-all
 libblockdev-smart
-libblockdev-smartmontools
 libblockdev-swap
-libblockdev-tools
 libblockdev-utils
 libbluray
 libbpf
@@ -1139,7 +1100,6 @@ libbrotli
 libbs2b
 libbsd
 libbytesize
-libcacard
 libcamera
 libcamera-ipa
 libcanberra
@@ -1155,7 +1115,6 @@ libchromaprint
 libcloudproviders
 libcollection
 libcom_err
-libcomps
 libcpuid
 libcue
 libcupsfilters
@@ -1166,7 +1125,6 @@ libdav1d
 libdecor
 libdeflate
 libdisplay-info
-libdnf
 libdnf5
 libdnf5-cli
 libdnf5-plugin-appstream
@@ -1233,7 +1191,6 @@ libimobiledevice
 libimobiledevice-glue
 libini_config
 libinput
-libipt
 libjpeg-turbo
 libjxl
 libkcapi
@@ -1292,7 +1249,6 @@ libpasswdqc
 libpath_utils
 libpcap
 libpciaccess
-libphodav
 libphonenumber
 libpinyin
 libpinyin-data
@@ -1305,7 +1261,6 @@ libportal
 libportal-gtk4
 libppd
 libproxy
-libpskc
 libpsl
 libpwquality
 libqmi
@@ -1316,13 +1271,7 @@ libraqm
 LibRaw
 libref_array
 librepo
-libreport
-libreport-anaconda
-libreport-cli
 libreport-filesystem
-libreport-plugin-bugzilla
-libreport-plugin-reportuploader
-libreport-web
 librist
 librsvg2
 libsamplerate
@@ -1381,7 +1330,6 @@ liburing
 libusb1
 libusbmuxd
 libuser
-libutempter
 libuuid
 libuv
 libv4l
@@ -1449,7 +1397,6 @@ lilv-libs
 linux-atm-libs
 linux-firmware
 linux-firmware-whence
-livesys-scripts
 llhttp
 llvm-filesystem
 llvm-libs
@@ -1467,7 +1414,6 @@ lsof
 lttng-ust
 lua-libs
 lvm2
-lvm2-dbusd
 lvm2-libs
 lz4-libs
 lzo
@@ -1522,8 +1468,6 @@ nautilus-extensions
 ncurses
 ncurses-base
 ncurses-libs
-ndctl
-ndctl-libs
 netavark
 netpbm
 net-snmp-libs
@@ -1534,15 +1478,12 @@ NetworkManager-adsl
 NetworkManager-bluetooth
 NetworkManager-config-connectivity-fedora
 NetworkManager-libnm
-NetworkManager-openconnect
-NetworkManager-openconnect-gnome
 NetworkManager-openvpn
 NetworkManager-openvpn-gnome
 NetworkManager-ppp
 NetworkManager-ssh
 NetworkManager-ssh-gnome
 NetworkManager-ssh-selinux
-NetworkManager-team
 NetworkManager-vpnc
 NetworkManager-vpnc-gnome
 NetworkManager-wifi
@@ -1585,23 +1526,17 @@ nxpwireless-firmware
 oniguruma
 openal-soft
 openapv-libs
-openconnect
 opencore-amr
 openexr-libs
 openh264
 openjpeg
 openldap
-openpace
 openpgm
 open-sans-fonts
-opensc
-opensc-libs
 openssh
 openssh-clients
 openssh-server
 openssl-libs
-open-vm-tools
-open-vm-tools-desktop
 openvpn
 opus
 orc
@@ -1647,9 +1582,6 @@ pcre2
 pcre2-syntax
 pcre2-utf16
 pcre2-utf32
-pcsc-lite
-pcsc-lite-ccid
-pcsc-lite-libs
 perl-AutoLoader
 perl-B
 perl-base
@@ -1770,84 +1702,52 @@ python3
 python3-anyio
 python3-argcomplete
 python3-audit
-python3-blivet
-python3-blockdev
 python3-brlapi
-python3-bytesize
 python3-cairo
 python3-certifi
-python3-cffi
 python3-charset-normalizer
 python3-click
-python3-crypt-r
 python3-cups
 python3-dasbus
-python3-dateutil
 python3-dbus
 python3-distro
-python3-dnf
-python3-dnf-plugins-core
 python3-enchant
 python3-file-magic
 python3-firewall
 python3-gobject
 python3-gobject-base
 python3-h11
-python3-hawkey
 python3-html2text
 python3-httpcore
 python3-httpx
 python3-ibus
 python3-idna
-python3-iso639
-python3-kickstart
 python3-langtable
-python3-libcomps
-python3-libdnf
-python3-libdnf5
-python3-libmount
-python3-libreport
 python3-libs
 python3-libselinux
 python3-libsemanage
 python3-louis
-python3-meh
 python3-nftables
 python3-olefile
 python3-packaging
 python3-pam
 python3-pexpect
-python3-pid
 python3-pillow
 python3-policycoreutils
-python3-productmd
 python3-psutil
 python3-ptyprocess
-python3-pwquality
 python3-pyatspi
 python3-pyaudio
-python3-pycparser
-python3-pyparted
 python3-pysocks
-python3-pyudev
 python3-pyxdg
 python3-pyyaml
 python3-rapidfuzz
 python3-regex
 python3-requests
-python3-requests-file
-python3-requests-ftp
-python3-rpm
-python3-satyr
 python3-setools
-python3-simpleline
-python3-six
 python3-speechd
-python3-systemd
-python3-unbound
 python3-urllib3
 python3-urllib3+socks
-python3-xkbregistry
 python-pip-wheel
 python-unversioned-command
 qcom-wwan-firmware
@@ -1881,7 +1781,6 @@ rpm-libs
 rpm-plugin-audit
 rpm-plugin-dbus-announce
 rpm-plugin-selinux
-rpm-plugin-systemd-inhibit
 rpm-sequoia
 rpm-sign-libs
 rsync
@@ -1899,7 +1798,6 @@ sane-backends
 sane-backends-drivers-cameras
 sane-backends-drivers-scanners
 sane-backends-libs
-satyr
 sdbus-cpp
 sdl2-compat
 SDL3
@@ -1927,7 +1825,6 @@ sord
 sos
 sound-theme-freedesktop
 soundtouch
-source-highlight
 soxr
 spandsp
 spdlog
@@ -1935,8 +1832,6 @@ speech-dispatcher
 speech-dispatcher-espeak-ng
 speech-dispatcher-libs
 speex
-spice-glib
-spice-gtk3
 spice-vdagent
 spice-webdavd
 spirv-tools-libs
@@ -1947,7 +1842,6 @@ sshpass
 sso-mib-libs
 startup-notification
 stix-fonts
-stoken-libs
 subversion
 subversion-libs
 sudo
@@ -1987,7 +1881,6 @@ thermald
 time
 tinysparql
 tiwilink-firmware
-tmux
 toolbox
 totem-pl-parser
 tpm2-tools
@@ -2002,7 +1895,6 @@ uchardet
 udftools
 udisks2
 udisks2-btrfs
-udisks2-iscsi
 unbound-anchor
 unbound-libs
 unicode-ucd
@@ -2026,7 +1918,6 @@ urw-base35-z003-fonts
 usb_modeswitch
 usb_modeswitch-data
 usbmuxd
-usbredir
 usbutils
 usermode
 userspace-rcu
@@ -2085,10 +1976,6 @@ xhost
 xkbcomp
 xkeyboard-config
 xml-common
-xmlrpc-c
-xmlrpc-c-client
-xmlsec1
-xmlsec1-openssl
 xmodmap
 xorg-x11-server-Xwayland
 xorg-x11-xauth
@@ -2142,13 +2029,6 @@ flatpak-add-fedora-repos.service
 gdm.service
 getty@.service
 irqbalance.service
-iscsid.socket
-iscsi-onboot.service
-iscsi.service
-iscsi-starter.service
-iscsiuio.socket
-livesys-late.service
-livesys.service
 lvm2-lvmpolld.socket
 lvm2-monitor.service
 mcelog.service
@@ -2158,8 +2038,6 @@ NetworkManager-dispatcher.service
 NetworkManager.service
 NetworkManager-wait-online.service
 nix-daemon.service
-pcscd.service
-pcscd.socket
 rpmdb-rebuild.service
 rsyslog.service
 rtkit-daemon.service
@@ -2189,8 +2067,6 @@ thermald.service
 udisks2.service
 upower.service
 uresourced.service
-vgauthd.service
-vmtoolsd.service
 ```
 
 # Groups
