@@ -174,6 +174,7 @@ report_systemd() {
 		systemctl list-unit-files --type=service --state=enabled,indirect --no-legend
 		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
 	} | awk '{print $1}' | sort >>"$file"
+	printf '```\n\n' >>"$file"
 	printf '### User\n\n' >>"$file"
 	printf '```\n' >>"$file"
 	{
