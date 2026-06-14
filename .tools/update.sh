@@ -166,6 +166,23 @@ fi
 rm -f -- "$file"
 report_flatpak "$file"
 
+report_systemd() {
+	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
+	printf '### Global, System\n\n' >>"$file"
+	printf '```\n' >>"$file"
+	{
+		systemctl list-unit-files --type=service --state=enabled,indirect --no-legend
+		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
+	} | awk '{print $1}' | sort >>"$file"
+	printf '### User\n\n' >>"$file"
+	printf '```\n' >>"$file"
+	{
+		systemctl --user list-unit-files --type=service --state=enabled,indirect --no-legend
+		systemctl --user list-unit-files --type=socket --state=enabled,indirect --no-legend
+	} | awk '{print $1}' | sort >>"$file"
+	printf '```\n\n' >>"$file"
+}
+
 if [ "$hostname" == void ]; then
 	printf 'report -- XBPS\n'
 	printf '# XBPS\n\n' >>"$file"
@@ -189,6 +206,8 @@ if [ "$hostname" == void ]; then
 	printf '```\n' >>"$file"
 	ls /var/service/ | sort >>"$file"
 	printf '```\n\n' >>"$file"
+
+	# void doesn't have/use systemd, don't call `report_systemd` here
 elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	printf 'report -- pacman\n'
 	printf '# `pacman`\n\n' >>"$file"
@@ -210,13 +229,7 @@ elif [ "$hostname" == big-box ] || [ "$hostname" == mini-box ]; then
 	pacman -Q | awk '{print $1}' | sort >>"$file"
 	printf '```\n\n' >>"$file"
 
-	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
-	printf '```\n' >>"$file"
-	{
-		systemctl list-unit-files --type=service --state=enabled,indirect --no-legend
-		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
-	} | awk '{print $1}' | sort >>"$file"
-	printf '```\n\n' >>"$file"
+	report_systemd
 elif [ "$hostname" == thinkpad-x260 ]; then
 	printf 'report -- dpkg/apt\n'
 	printf '# `dpkg`/`apt`\n\n' >>"$file"
@@ -231,13 +244,7 @@ elif [ "$hostname" == thinkpad-x260 ]; then
 	apt-mark showmanual | grep -Ev '\-microcode|firmware-' | sort >>"$file"
 	printf '```\n\n' >>"$file"
 
-	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
-	printf '```\n' >>"$file"
-	{
-		systemctl list-unit-files --type=service --state=enabled,indirect --no-legend
-		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
-	} | awk '{print $1}' | sort >>"$file"
-	printf '```\n\n' >>"$file"
+	report_systemd
 elif [ "$hostname" == thinkpad-t14 ]; then
 	printf 'report -- rpm/dnf\n'
 	printf '# `rpm`/`dnf`\n\n' >>"$file"
@@ -259,13 +266,7 @@ elif [ "$hostname" == thinkpad-t14 ]; then
 	dnf repoquery --installed --queryformat '%{name}\n' | sort >>"$file"
 	printf '```\n\n' >>"$file"
 
-	printf '## Services & Sockets (`systemd`)\n\n' >>"$file"
-	printf '```\n' >>"$file"
-	{
-		systemctl list-unit-files --type=service --state=enabled,indirect --no-legend
-		systemctl list-unit-files --type=socket --state=enabled,indirect --no-legend
-	} | awk '{print $1}' | sort >>"$file"
-	printf '```\n\n' >>"$file"
+	report_systemd
 fi
 
 report_groups "$file"

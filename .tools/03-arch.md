@@ -1186,6 +1186,8 @@ zxing-cpp
 
 ## Services & Sockets (`systemd`)
 
+### Global, System
+
 ```
 bluetooth.service
 cups-browsed.service
@@ -1196,7 +1198,6 @@ getty@.service
 lactd.service
 NetworkManager-dispatcher.service
 NetworkManager.service
-NetworkManager-wait-online.service
 nix-daemon.service
 pcscd.service
 plasmalogin.service
@@ -1217,6 +1218,15 @@ systemd-userdbd.socket
 talk.service
 uuidd.service
 wg-quick@.service
+### User
+
+```
+p11-kit-server.socket
+pipewire-pulse.socket
+pipewire.socket
+ssh-agent.service
+wireplumber.service
+xdg-user-dirs.service
 ```
 
 # Groups
